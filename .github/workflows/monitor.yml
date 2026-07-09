@@ -1,0 +1,70 @@
+# Monitor Smiles — roda a busca em horários agendados, publica os dados
+# e envia e-mail quando encontra passagem abaixo do limite de alerta.
+name: Monitor Smiles
+
+on:
+  schedule:
+    # Horários em UTC. Maceió = UTC-3, então isto roda às 00h, 06h, 12h e 18h locais.
+    - cron: "0 3,9,15,21 * * *"
+  workflow_dispatch: {}   # permite rodar manualmente pela aba Actions
+
+permissions:
+  contents: write
+
+concurrency:
+  group: monitor-smiles
+  cancel-in-progress: false
+
+jobs:
+  buscar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Baixar o repositório
+        uses: actions/checkout@v4
+
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar dependências
+        run: pip install -r requirements.txt
+
+      - name: Buscar passagens
+        env:
+          # Opcional: se existir o secret SMILES_API_KEY, ele substitui a chave do config.json
+          SMILES_API_KEY: ${{ secrets.SMILES_API_KEY }}
+        run: python buscar.py
+
+      - name: Publicar resultados (commit no repositório)
+        run: |
+          git config user.name "monitor-smiles[bot]"
+          git config user.email "actions@users.noreply.github.com"
+          git add docs/dados.json docs/historico.json
+          git diff --cached --quiet || git commit -m "Atualiza resultados da busca [skip ci]"
+          git push
+
+      - name: Verificar se há alertas
+        id: alertas
+        run: |
+          if [ -s alertas.md ]; then
+            echo "tem=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "tem=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Enviar e-mail de alerta (via Resend)
+        if: steps.alertas.outputs.tem == 'true'
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.resend.com
+          server_port: 465
+          secure: true
+          username: resend
+          password: ${{ secrets.RESEND_API_KEY }}
+          from: Monitor Smiles <${{ secrets.MAIL_FROM }}>
+          to: ${{ secrets.MAIL_TO }}
+          subject: "✈️ Smiles: passagem barata encontrada saindo de MCZ!"
+          html_body: file://alertas.md
+          convert_markdown: true
