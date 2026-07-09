@@ -60,7 +60,15 @@ def api_key(cfg):
 # ---------------------------------------------------------------------------
 
 class ClienteNavegador:
-    """Faz as consultas de dentro de um Chrome invisível (driblando a Akamai)."""
+    """Faz as consultas de dentro de um Chrome invisível (driblando a Akamai).
+
+    Estratégia: abre a página de emissão com uma busca real (isso faz o sensor
+    da Akamai validar a sessão e gerar os cookies _abck/bm_*). Depois, as
+    consultas são feitas via fetch() de dentro da página. Se o fetch for
+    bloqueado, cai para o modo "navegação": abre a página de busca para cada
+    consulta e intercepta a resposta da API que o próprio site faz (mais lento,
+    porém indistinguível de um usuário real).
+    """
 
     _JS_FETCH = """async ({ url, headers }) => {
         try {
@@ -76,34 +84,77 @@ class ClienteNavegador:
 
         self._cfg = cfg
         self._headers = {"x-api-key": api_key(cfg), "Channel": "WEB"}
+        self._modo_navegacao = False
+        self._falhas_fetch = 0
+
         self._pw = sync_playwright().start()
-        self._browser = self._pw.chromium.launch(
-            headless=True,
-            args=["--disable-blink-features=AutomationControlled"],
-        )
+        try:
+            # channel="chromium" usa o headless "novo", bem mais parecido
+            # com um Chrome real do que o headless-shell padrão.
+            self._browser = self._pw.chromium.launch(
+                headless=True,
+                channel="chromium",
+                args=["--disable-blink-features=AutomationControlled"],
+            )
+        except Exception:
+            self._browser = self._pw.chromium.launch(
+                headless=True,
+                args=["--disable-blink-features=AutomationControlled"],
+            )
+
+        # Remove o "HeadlessChrome" do User-Agent, que entrega o robô
+        temp = self._browser.new_context()
+        pagina_temp = temp.new_page()
+        ua = pagina_temp.evaluate("navigator.userAgent")
+        temp.close()
         contexto = self._browser.new_context(
+            user_agent=ua.replace("HeadlessChrome", "Chrome"),
             locale="pt-BR",
             timezone_id="America/Maceio",
             viewport={"width": 1366, "height": 850},
         )
         self._page = contexto.new_page()
-        print("Abrindo smiles.com.br para gerar os cookies anti-bot...")
-        self._page.goto(
-            "https://www.smiles.com.br/home",
-            wait_until="domcontentloaded",
-            timeout=90_000,
-        )
-        # Movimentos de mouse + espera ajudam o sensor da Akamai a validar a sessão
-        for x, y in ((300, 200), (700, 420), (500, 600)):
-            self._page.mouse.move(x, y, steps=12)
-            self._page.wait_for_timeout(700)
-        self._page.wait_for_timeout(4_000)
+
+        # "Esquenta" a sessão com uma busca real na página de emissão:
+        # é isso que faz o sensor da Akamai liberar os cookies.
+        primeira_data = (date.today() + timedelta(days=30)).isoformat()
+        print("Abrindo a busca da Smiles para validar a sessão (anti-bot)...")
+        status, _ = self._consultar_navegando("GRU", primeira_data)
+        if status == 200:
+            print("Sessão validada pela Akamai.")
+        else:
+            print(f"Aviso: busca de validação retornou HTTP {status} — seguindo mesmo assim.")
+
+    def _consultar_navegando(self, destino, data):
+        """Abre a página de busca e intercepta a resposta da API feita pelo site."""
+        url = link_emissao(self._cfg["origem"], destino, data)
+        try:
+            with self._page.expect_response(
+                lambda r: "airlines/search" in r.url, timeout=60_000
+            ) as espera:
+                self._page.goto(url, wait_until="domcontentloaded", timeout=60_000)
+            resposta = espera.value
+            return resposta.status, resposta.text()
+        except Exception as e:
+            return 0, f"navegacao: {type(e).__name__}"
 
     def get(self, url, params):
+        destino = params["destinationAirportCode"]
+        data = params["departureDate"]
+        if self._modo_navegacao:
+            return self._consultar_navegando(destino, data)
+
         resultado = self._page.evaluate(
             self._JS_FETCH,
             {"url": f"{url}?{urlencode(params)}", "headers": self._headers},
         )
+        if resultado["status"] in STATUS_BLOQUEIO:
+            self._falhas_fetch += 1
+            if self._falhas_fetch >= 2:
+                print("fetch() bloqueado — mudando para o modo navegação (mais lento, mais confiável).")
+                self._modo_navegacao = True
+            return self._consultar_navegando(destino, data)
+        self._falhas_fetch = 0
         return resultado["status"], resultado["body"]
 
     def close(self):
