@@ -17,6 +17,23 @@ Busca automática das passagens mais baratas **em milhas Smiles** saindo de **Ma
 | `docs/index.html` | A página web (publicada via GitHub Pages) |
 | `docs/dados.json` | Resultados da última busca (gerado automaticamente) |
 
+## Atalhos (Makefile)
+
+Todos os comandos do dia a dia estão no `Makefile`. Rode `make` para ver a lista:
+
+| Comando | O que faz |
+|---|---|
+| `make instalar` | Instala as dependências (Python + Chromium) |
+| `make env` | Cria o arquivo de credenciais do e-mail |
+| `make testar` | Busca rápida (3 destinos) sem publicar |
+| `make rodar` | Busca completa + publica no GitHub + e-mail |
+| `make agendar` | Liga o agendamento automático (4x ao dia) |
+| `make desagendar` | Desliga o agendamento |
+| `make status` | Mostra se o agendamento está ativo |
+| `make log` | Últimas linhas do log |
+
+Instalação em 4 comandos: `make instalar` → `make env` (depois edite `~/.smiles-monitor.env` com suas credenciais) → `make testar` → `make agendar`.
+
 ## Instalação no seu Mac (uma vez só)
 
 Você já tem o repositório clonado em `~/code/smiles-search`. Falta:
