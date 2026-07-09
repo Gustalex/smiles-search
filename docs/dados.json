@@ -1,7 +1,25 @@
 {
-  "gerado_em": null,
-  "origem": "MCZ",
-  "status": "aguardando",
-  "estatisticas": {},
-  "resultados": []
+ "gerado_em": "2026-07-09T15:12:03-03:00",
+ "origem": "MCZ",
+ "status": "bloqueado",
+ "estatisticas": {
+  "consultas": 6,
+  "com_voos": 0,
+  "sem_voos": 0,
+  "bloqueadas": 6,
+  "erros": 0
+ },
+ "resultados": [
+  {
+   "destino": "GRU",
+   "nome": "São Paulo (Guarulhos)",
+   "regiao": "nacional",
+   "limite_alerta": 12000,
+   "milhas": null,
+   "detalhes": null,
+   "variacao": null,
+   "link": null,
+   "datas": []
+  }
+ ]
 }
