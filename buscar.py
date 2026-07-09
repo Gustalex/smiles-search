@@ -227,11 +227,16 @@ def datas_para_buscar(cfg):
 
 
 def link_emissao(origem, destino, data):
+    """Monta o link da página de resultados da Smiles (data = timestamp em ms)."""
+    ano, mes, dia = int(data[:4]), int(data[5:7]), int(data[8:10])
+    ts_ms = int(datetime(ano, mes, dia, tzinfo=FUSO).timestamp() * 1000)
     return (
-        "https://www.smiles.com.br/mfe/emissao-passagem/?adults=1&cabinType=all"
-        f"&children=0&currencyCode=BRL&departureDate={data}"
-        f"&destinationAirportCode={destino}&infants=0&isFlexibleDateChecked=false"
-        f"&originAirportCode={origem}&tripType=2"
+        "https://www.smiles.com.br/mfe/emissao-passagem/?adults=1&cabin=ECONOMIC"
+        f"&children=0&departureDate={ts_ms}&infants=0&isElegible=false"
+        "&isFlexibleDateChecked=false&returnDate=&searchType=g3&segments=1"
+        f"&tripType=2&originAirport={origem}&originCity=&originCountry="
+        f"&originAirportIsAny=false&destinationAirport={destino}&destinCity="
+        "&destinCountry=&destinAirportIsAny=false&novo-resultado-voos=true"
     )
 
 
