@@ -26,7 +26,17 @@ from os import environ
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
-import requests
+# curl_cffi imita a "impressão digital" de conexão de um navegador real,
+# o que evita bloqueios da proteção anti-bot (Akamai). Se não estiver
+# instalado, cai para o requests comum.
+try:
+    from curl_cffi import requests
+
+    USANDO_CURL_CFFI = True
+except ImportError:
+    import requests
+
+    USANDO_CURL_CFFI = False
 
 RAIZ = Path(__file__).resolve().parent
 ARQ_CONFIG = RAIZ / "config.json"
@@ -50,8 +60,7 @@ def montar_headers(cfg):
     api = cfg["api"]
     headers = {
         "x-api-key": environ.get("SMILES_API_KEY") or api["x_api_key"],
-        "region": api.get("region", "BRASIL"),
-        "channel": "Web",
+        "Channel": "WEB",
         "Origin": "https://www.smiles.com.br",
         "Referer": "https://www.smiles.com.br/",
         "Accept": "application/json, text/plain, */*",
@@ -86,24 +95,23 @@ def link_emissao(origem, destino, data):
 def consultar(sessao, cfg, headers, destino, data):
     """Faz uma consulta. Retorna (codigo_http, payload_ou_None)."""
     params = {
+        "cabin": cfg["api"].get("cabin", "ECONOMIC"),
+        "originAirportCode": cfg["origem"],
+        "destinationAirportCode": destino,
+        "departureDate": data,
+        "memberNumber": "",
         "adults": "1",
         "children": "0",
         "infants": "0",
-        "cabinType": cfg["api"].get("cabin", "all"),
-        "currencyCode": "BRL",
-        "departureDate": data,
-        "originAirportCode": cfg["origem"],
-        "destinationAirportCode": destino,
-        "tripType": "2",
         "forceCongener": "false",
-        "isFlexibleDateChecked": "false",
+        "cookies": "_gid=undefined;",
     }
     for tentativa in (1, 2):
         try:
             resp = sessao.get(
                 cfg["api"]["url"], params=params, headers=headers, timeout=25
             )
-        except requests.RequestException:
+        except Exception:
             if tentativa == 1:
                 time.sleep(5)
                 continue
@@ -176,7 +184,11 @@ def executar(args):
         if r.get("milhas")
     }
 
-    sessao = requests.Session()
+    if USANDO_CURL_CFFI:
+        sessao = requests.Session(impersonate=cfg["api"].get("impersonate", "chrome"))
+    else:
+        sessao = requests.Session()
+        print("AVISO: curl_cffi não instalado — usando requests (maior chance de bloqueio).")
     stats = {"consultas": 0, "com_voos": 0, "sem_voos": 0, "bloqueadas": 0, "erros": 0}
     bloqueios_consecutivos = 0
     abortado = False

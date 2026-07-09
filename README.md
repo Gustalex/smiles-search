@@ -73,6 +73,11 @@ Se a página mostrar o aviso de **bloqueio** (ou o log do Actions mostrar erros 
 3. Clique na requisição que aparecer → aba **Headers** → em *Request Headers*, copie o valor de **`x-api-key`**.
 4. No GitHub, crie/atualize o secret **`SMILES_API_KEY`** com esse valor (ou edite o `x_api_key` no `config.json`).
 
+Outras coisas que já mudaram no passado e valem checar na mesma tela do DevTools:
+
+- **O endereço da API** — já foi `...flightsearch-prd...`, hoje é `...flightsearch-blue...` (e pode virar `-green`). Se o endereço da requisição no navegador for diferente do `url` no `config.json`, atualize-o.
+- **Os parâmetros da busca** — compare a URL da requisição com os `params` do `buscar.py`.
+
 Se mesmo assim continuar bloqueado, a Smiles pode ter endurecido a proteção anti-bot (isso já aconteceu em 2025) — aí a saída é adaptar o script, o que pode exigir ajuda de alguém técnico (ou do Claude 🙂).
 
 ## Testando no seu computador (opcional)

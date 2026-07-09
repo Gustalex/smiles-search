@@ -2,11 +2,11 @@
   "origem": "MCZ",
 
   "api": {
-    "url": "https://api-air-flightsearch-prd.smiles.com.br/v1/airlines/search",
-    "x_api_key": "aJqPU7xNHl9qN3NVZnPaJ208aPo2Bh2p",
-    "region": "BRASIL",
-    "cabin": "all",
-    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+    "url": "https://api-air-flightsearch-blue.smiles.com.br/v1/airlines/search",
+    "x_api_key": "aJqPU7xNHl9qN3NVZnPaJ208aPo2Bh2p2ZV844tw",
+    "cabin": "ECONOMIC",
+    "impersonate": "chrome",
+    "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
     "headers_extras": {}
   },
 
