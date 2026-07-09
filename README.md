@@ -84,6 +84,9 @@ Se mesmo assim continuar bloqueado, a Smiles pode ter endurecido a proteção an
 
 ```bash
 pip install -r requirements.txt
+playwright install chromium
 python buscar.py --max-destinos 3 --max-datas 2   # teste rápido de verdade
 python buscar.py --simular tests/resposta_exemplo.json --max-destinos 2 --max-datas 1   # teste offline
 ```
+
+> O script abre um Chrome invisível (Playwright) para gerar os cookies anti-bot da Smiles — consultas diretas sem navegador são bloqueadas com erro 406.

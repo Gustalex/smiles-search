@@ -7,6 +7,12 @@ amostrando datas futuras, e salva as passagens mais baratas (em milhas) em
 docs/dados.json — que alimenta a página web. Quando encontra preço abaixo do
 limite de alerta, gera alertas.md (usado pelo GitHub Actions para enviar e-mail).
 
+A Smiles usa proteção anti-bot (Akamai) que exige cookies gerados pelo
+JavaScript do site. Por isso o modo padrão ("navegador") abre um Chrome
+invisível via Playwright, visita o site para gerar os cookies e faz as
+consultas de dentro do navegador. O modo "http" (curl_cffi/requests) existe
+como alternativa leve, mas costuma ser bloqueado.
+
 Uso:
     python buscar.py                     # execução normal
     python buscar.py --max-destinos 3    # teste rápido com poucos destinos
@@ -24,19 +30,8 @@ import time
 from datetime import date, datetime, timedelta
 from os import environ
 from pathlib import Path
+from urllib.parse import urlencode
 from zoneinfo import ZoneInfo
-
-# curl_cffi imita a "impressão digital" de conexão de um navegador real,
-# o que evita bloqueios da proteção anti-bot (Akamai). Se não estiver
-# instalado, cai para o requests comum.
-try:
-    from curl_cffi import requests
-
-    USANDO_CURL_CFFI = True
-except ImportError:
-    import requests
-
-    USANDO_CURL_CFFI = False
 
 RAIZ = Path(__file__).resolve().parent
 ARQ_CONFIG = RAIZ / "config.json"
@@ -45,7 +40,7 @@ ARQ_HISTORICO = RAIZ / "docs" / "historico.json"
 ARQ_ALERTAS = RAIZ / "alertas.md"
 
 FUSO = ZoneInfo("America/Maceio")
-STATUS_BLOQUEIO = {401, 403, 406, 429}
+STATUS_BLOQUEIO = {0, 401, 403, 406, 429}
 MAX_ENTRADAS_HISTORICO = 120
 
 
@@ -56,20 +51,123 @@ def carregar_json(caminho, padrao):
         return padrao
 
 
-def montar_headers(cfg):
-    api = cfg["api"]
-    headers = {
-        "x-api-key": environ.get("SMILES_API_KEY") or api["x_api_key"],
-        "Channel": "WEB",
-        "Origin": "https://www.smiles.com.br",
-        "Referer": "https://www.smiles.com.br/",
-        "Accept": "application/json, text/plain, */*",
-        "Accept-Language": "pt-BR,pt;q=0.9",
-        "User-Agent": api.get("user_agent", "Mozilla/5.0"),
-    }
-    headers.update(api.get("headers_extras", {}))
-    return headers
+def api_key(cfg):
+    return environ.get("SMILES_API_KEY") or cfg["api"]["x_api_key"]
 
+
+# ---------------------------------------------------------------------------
+# Clientes de consulta: navegador (Playwright), http (curl_cffi) e simulado
+# ---------------------------------------------------------------------------
+
+class ClienteNavegador:
+    """Faz as consultas de dentro de um Chrome invisível (driblando a Akamai)."""
+
+    _JS_FETCH = """async ({ url, headers }) => {
+        try {
+            const r = await fetch(url, { headers });
+            return { status: r.status, body: await r.text() };
+        } catch (e) {
+            return { status: 0, body: String(e) };
+        }
+    }"""
+
+    def __init__(self, cfg):
+        from playwright.sync_api import sync_playwright
+
+        self._cfg = cfg
+        self._headers = {"x-api-key": api_key(cfg), "Channel": "WEB"}
+        self._pw = sync_playwright().start()
+        self._browser = self._pw.chromium.launch(
+            headless=True,
+            args=["--disable-blink-features=AutomationControlled"],
+        )
+        contexto = self._browser.new_context(
+            locale="pt-BR",
+            timezone_id="America/Maceio",
+            viewport={"width": 1366, "height": 850},
+        )
+        self._page = contexto.new_page()
+        print("Abrindo smiles.com.br para gerar os cookies anti-bot...")
+        self._page.goto(
+            "https://www.smiles.com.br/home",
+            wait_until="domcontentloaded",
+            timeout=90_000,
+        )
+        # Movimentos de mouse + espera ajudam o sensor da Akamai a validar a sessão
+        for x, y in ((300, 200), (700, 420), (500, 600)):
+            self._page.mouse.move(x, y, steps=12)
+            self._page.wait_for_timeout(700)
+        self._page.wait_for_timeout(4_000)
+
+    def get(self, url, params):
+        resultado = self._page.evaluate(
+            self._JS_FETCH,
+            {"url": f"{url}?{urlencode(params)}", "headers": self._headers},
+        )
+        return resultado["status"], resultado["body"]
+
+    def close(self):
+        try:
+            self._browser.close()
+            self._pw.stop()
+        except Exception:
+            pass
+
+
+class ClienteHttp:
+    """Consulta direta via curl_cffi (ou requests). Alternativa leve ao navegador."""
+
+    def __init__(self, cfg):
+        self._cfg = cfg
+        self._headers = {
+            "x-api-key": api_key(cfg),
+            "Channel": "WEB",
+            "Origin": "https://www.smiles.com.br",
+            "Referer": "https://www.smiles.com.br/",
+            "Accept": "application/json, text/plain, */*",
+            "Accept-Language": "pt-BR,pt;q=0.9",
+            "User-Agent": cfg["api"].get("user_agent", "Mozilla/5.0"),
+        }
+        self._headers.update(cfg["api"].get("headers_extras", {}))
+        try:
+            from curl_cffi import requests as creq
+
+            self._sessao = creq.Session(
+                impersonate=cfg["api"].get("impersonate", "chrome")
+            )
+        except ImportError:
+            import requests
+
+            print("AVISO: curl_cffi não instalado — usando requests (maior chance de bloqueio).")
+            self._sessao = requests.Session()
+
+    def get(self, url, params):
+        try:
+            resp = self._sessao.get(url, params=params, headers=self._headers, timeout=25)
+        except Exception as e:
+            return 0, str(e)
+        return resp.status_code, resp.text
+
+    def close(self):
+        pass
+
+
+class ClienteSimulado:
+    """Devolve sempre a mesma resposta salva em arquivo (testes offline)."""
+
+    def __init__(self, caminho):
+        self._corpo = Path(caminho).read_text(encoding="utf-8")
+
+    def get(self, url, params):
+        return 200, self._corpo
+
+    def close(self):
+        pass
+
+
+# ---------------------------------------------------------------------------
+# Lógica de busca
+# ---------------------------------------------------------------------------
 
 def datas_para_buscar(cfg):
     d = cfg["datas"]
@@ -92,9 +190,8 @@ def link_emissao(origem, destino, data):
     )
 
 
-def consultar(sessao, cfg, headers, destino, data):
-    """Faz uma consulta. Retorna (codigo_http, payload_ou_None)."""
-    params = {
+def montar_params(cfg, destino, data):
+    return {
         "cabin": cfg["api"].get("cabin", "ECONOMIC"),
         "originAirportCode": cfg["origem"],
         "destinationAirportCode": destino,
@@ -106,26 +203,23 @@ def consultar(sessao, cfg, headers, destino, data):
         "forceCongener": "false",
         "cookies": "_gid=undefined;",
     }
+
+
+def consultar(cliente, cfg, destino, data):
+    """Retorna (status_http, payload_ou_None). Uma retentativa em erro 5xx."""
+    params = montar_params(cfg, destino, data)
     for tentativa in (1, 2):
-        try:
-            resp = sessao.get(
-                cfg["api"]["url"], params=params, headers=headers, timeout=25
-            )
-        except Exception:
-            if tentativa == 1:
-                time.sleep(5)
-                continue
-            return (0, None)
-        if resp.status_code >= 500 and tentativa == 1:
+        status, corpo = cliente.get(cfg["api"]["url"], params)
+        if status >= 500 and tentativa == 1:
             time.sleep(5)
             continue
-        if resp.status_code != 200:
-            return (resp.status_code, None)
+        if status != 200:
+            return status, corpo
         try:
-            return (200, resp.json())
-        except ValueError:
-            return (200, None)
-    return (0, None)
+            return 200, json.loads(corpo)
+        except (ValueError, TypeError):
+            return 200, None
+    return 0, None
 
 
 def melhor_voo(payload, tarifas_aceitas):
@@ -158,24 +252,25 @@ def limite_alerta(cfg, codigo, info):
     return cfg["limites_alerta_milhas"].get(info.get("regiao", ""), 0)
 
 
+def criar_cliente(cfg, args):
+    if args.simular:
+        return ClienteSimulado(args.simular)
+    modo = cfg["api"].get("modo", "navegador")
+    if modo == "navegador":
+        return ClienteNavegador(cfg)
+    return ClienteHttp(cfg)
+
+
 def executar(args):
     cfg = carregar_json(ARQ_CONFIG, None)
     if cfg is None:
         print("ERRO: config.json não encontrado ou inválido.")
         return 1
 
-    headers = montar_headers(cfg)
     datas = datas_para_buscar(cfg)[: args.max_datas or None]
     destinos = list(cfg["destinos"].items())[: args.max_destinos or None]
     pausa = cfg.get("pausa_entre_consultas_seg", 1.5)
     limite_bloqueios = cfg.get("bloqueios_consecutivos_para_abortar", 6)
-
-    simulado = None
-    if args.simular:
-        simulado = carregar_json(args.simular, None)
-        if simulado is None:
-            print(f"ERRO: não consegui ler {args.simular}")
-            return 1
 
     dados_anteriores = carregar_json(ARQ_DADOS, {})
     milhas_anteriores = {
@@ -184,68 +279,70 @@ def executar(args):
         if r.get("milhas")
     }
 
-    if USANDO_CURL_CFFI:
-        sessao = requests.Session(impersonate=cfg["api"].get("impersonate", "chrome"))
-    else:
-        sessao = requests.Session()
-        print("AVISO: curl_cffi não instalado — usando requests (maior chance de bloqueio).")
+    try:
+        cliente = criar_cliente(cfg, args)
+    except Exception as e:
+        print(f"ERRO ao iniciar o cliente de consultas: {e}")
+        return 1
+
     stats = {"consultas": 0, "com_voos": 0, "sem_voos": 0, "bloqueadas": 0, "erros": 0}
     bloqueios_consecutivos = 0
     abortado = False
     resultados = []
 
-    for codigo, info in destinos:
-        if abortado:
-            break
-        por_data = []
-        for data_voo in datas:
-            if simulado is not None:
-                status, payload = 200, simulado
-            else:
-                time.sleep(pausa + random.uniform(0, 1))
-                status, payload = consultar(sessao, cfg, headers, codigo, data_voo)
-            stats["consultas"] += 1
+    try:
+        for codigo, info in destinos:
+            if abortado:
+                break
+            por_data = []
+            for data_voo in datas:
+                if not args.simular:
+                    time.sleep(pausa + random.uniform(0, 1))
+                status, payload = consultar(cliente, cfg, codigo, data_voo)
+                stats["consultas"] += 1
 
-            if status in STATUS_BLOQUEIO:
-                stats["bloqueadas"] += 1
-                bloqueios_consecutivos += 1
-                print(f"  {cfg['origem']}->{codigo} {data_voo}: HTTP {status} (bloqueio?)")
-                if bloqueios_consecutivos >= limite_bloqueios:
-                    print("Muitos bloqueios consecutivos — abortando para não insistir.")
-                    abortado = True
-                    break
-                continue
-            if payload is None:
-                stats["erros"] += 1
+                if status in STATUS_BLOQUEIO:
+                    stats["bloqueadas"] += 1
+                    bloqueios_consecutivos += 1
+                    trecho = (payload or "")[:90] if isinstance(payload, str) else ""
+                    print(f"  {cfg['origem']}->{codigo} {data_voo}: HTTP {status} (bloqueio?) {trecho}")
+                    if bloqueios_consecutivos >= limite_bloqueios:
+                        print("Muitos bloqueios consecutivos — abortando para não insistir.")
+                        abortado = True
+                        break
+                    continue
+                if payload is None or isinstance(payload, str):
+                    stats["erros"] += 1
+                    bloqueios_consecutivos = 0
+                    continue
+
                 bloqueios_consecutivos = 0
-                continue
+                voo = melhor_voo(payload, cfg["tarifas_aceitas"])
+                if voo is None:
+                    stats["sem_voos"] += 1
+                    continue
+                stats["com_voos"] += 1
+                por_data.append({"data": data_voo, **voo})
 
-            bloqueios_consecutivos = 0
-            voo = melhor_voo(payload, cfg["tarifas_aceitas"])
-            if voo is None:
-                stats["sem_voos"] += 1
-                continue
-            stats["com_voos"] += 1
-            por_data.append({"data": data_voo, **voo})
-
-        melhor = min(por_data, key=lambda v: v["milhas"]) if por_data else None
-        anterior = milhas_anteriores.get(codigo)
-        resultado = {
-            "destino": codigo,
-            "nome": info["nome"],
-            "regiao": info.get("regiao", ""),
-            "limite_alerta": limite_alerta(cfg, codigo, info),
-            "milhas": melhor["milhas"] if melhor else None,
-            "detalhes": melhor,
-            "variacao": (melhor["milhas"] - anterior) if (melhor and anterior) else None,
-            "link": link_emissao(cfg["origem"], codigo, melhor["data"]) if melhor else None,
-            "datas": sorted(por_data, key=lambda v: v["data"]),
-        }
-        resultados.append(resultado)
-        if melhor:
-            print(f"{cfg['origem']}->{codigo}: {melhor['milhas']} milhas em {melhor['data']}")
-        else:
-            print(f"{cfg['origem']}->{codigo}: nenhum voo encontrado")
+            melhor = min(por_data, key=lambda v: v["milhas"]) if por_data else None
+            anterior = milhas_anteriores.get(codigo)
+            resultados.append({
+                "destino": codigo,
+                "nome": info["nome"],
+                "regiao": info.get("regiao", ""),
+                "limite_alerta": limite_alerta(cfg, codigo, info),
+                "milhas": melhor["milhas"] if melhor else None,
+                "detalhes": melhor,
+                "variacao": (melhor["milhas"] - anterior) if (melhor and anterior) else None,
+                "link": link_emissao(cfg["origem"], codigo, melhor["data"]) if melhor else None,
+                "datas": sorted(por_data, key=lambda v: v["data"]),
+            })
+            if melhor:
+                print(f"{cfg['origem']}->{codigo}: {melhor['milhas']} milhas em {melhor['data']}")
+            else:
+                print(f"{cfg['origem']}->{codigo}: nenhum voo encontrado")
+    finally:
+        cliente.close()
 
     resultados.sort(key=lambda r: (r["milhas"] is None, r["milhas"] or 0))
 
