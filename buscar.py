@@ -31,6 +31,7 @@ from datetime import date, datetime, timedelta
 from os import environ
 from pathlib import Path
 from urllib.parse import urlencode
+from urllib.request import Request, urlopen
 from zoneinfo import ZoneInfo
 
 RAIZ = Path(__file__).resolve().parent
@@ -302,6 +303,60 @@ def limite_alerta(cfg, codigo, info):
     return cfg["limites_alerta_milhas"].get(info.get("regiao", ""), 0)
 
 
+def enviar_email_resend(achados, origem):
+    """Envia o alerta por e-mail via API do Resend, se as credenciais existirem.
+
+    Lê RESEND_API_KEY, MAIL_FROM e MAIL_TO do ambiente (definidos no
+    ~/.smiles-monitor.env quando roda localmente). Sem elas, não faz nada.
+    """
+    chave = environ.get("RESEND_API_KEY")
+    remetente = environ.get("MAIL_FROM")
+    destino = environ.get("MAIL_TO")
+    if not (chave and remetente and destino and achados):
+        return
+
+    linhas = ""
+    for r in achados:
+        d = r["detalhes"]
+        milhas = f"{r['milhas']:,}".replace(",", ".")
+        linhas += (
+            f"<tr><td style='padding:6px 10px'>{r['nome']} ({r['destino']})</td>"
+            f"<td style='padding:6px 10px'><b>{milhas}</b> milhas</td>"
+            f"<td style='padding:6px 10px'>{d['data']}</td>"
+            f"<td style='padding:6px 10px'>{d['cia']}</td>"
+            f"<td style='padding:6px 10px'><a href=\"{r['link']}\">abrir no site</a></td></tr>"
+        )
+    html = (
+        f"<h2>✈️ Passagens baratas na Smiles — saindo de {origem}</h2>"
+        "<table style='border-collapse:collapse;font-family:sans-serif' border='1'>"
+        "<tr style='background:#f2f2f2'><th style='padding:6px 10px'>Destino</th>"
+        "<th style='padding:6px 10px'>Milhas</th><th style='padding:6px 10px'>Data</th>"
+        "<th style='padding:6px 10px'>Cia</th><th style='padding:6px 10px'>Reservar</th></tr>"
+        f"{linhas}</table>"
+        "<p style='color:#666;font-family:sans-serif;font-size:13px'>Preços por trecho "
+        "(só ida), sem taxa de embarque. Os valores mudam rápido — confirme no site "
+        "antes de emitir.</p>"
+    )
+    corpo = json.dumps({
+        "from": remetente,
+        "to": [destino],
+        "subject": f"✈️ Smiles: passagem barata saindo de {origem}!",
+        "html": html,
+    }).encode("utf-8")
+    req = Request(
+        "https://api.resend.com/emails",
+        data=corpo,
+        headers={"Authorization": f"Bearer {chave}", "Content-Type": "application/json"},
+        method="POST",
+    )
+    try:
+        with urlopen(req, timeout=20) as resp:
+            resp.read()
+        print(f"E-mail de alerta enviado para {destino}.")
+    except Exception as e:
+        print(f"Falha ao enviar e-mail: {e}")
+
+
 def criar_cliente(cfg, args):
     if args.simular:
         return ClienteSimulado(args.simular)
@@ -470,6 +525,7 @@ def executar(args):
         ]
         ARQ_ALERTAS.write_text("\n".join(linhas), encoding="utf-8")
         print(f"\n{len(achados)} alerta(s) gerado(s) em {ARQ_ALERTAS.name}")
+        enviar_email_resend(achados, cfg["origem"])
     elif ARQ_ALERTAS.exists():
         ARQ_ALERTAS.unlink()
 

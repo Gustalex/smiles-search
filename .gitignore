@@ -1,2 +1,4 @@
 __pycache__/
 alertas.md
+monitor.log
+*.env

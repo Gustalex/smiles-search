@@ -3,10 +3,13 @@
 name: Monitor Smiles
 
 on:
-  schedule:
-    # Horários em UTC. Maceió = UTC-3, então isto roda às 00h, 06h, 12h e 18h locais.
-    - cron: "0 3,9,15,21 * * *"
-  workflow_dispatch: {}   # permite rodar manualmente pela aba Actions
+  # AGENDAMENTO DESATIVADO: os IPs de datacenter do GitHub são bloqueados pela
+  # proteção anti-bot da Smiles (Akamai). A busca roda no Mac do usuário via
+  # launchd (ver rodar_local.sh e com.gustavo.smilesmonitor.plist).
+  # Para reativar no futuro, descomente o bloco 'schedule' abaixo.
+  # schedule:
+  #   - cron: "0 3,9,15,21 * * *"
+  workflow_dispatch: {}   # ainda permite rodar manualmente pela aba Actions, se quiser testar
 
 permissions:
   contents: write

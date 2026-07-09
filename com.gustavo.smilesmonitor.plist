@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.gustavo.smilesmonitor</string>
+
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/bash</string>
+    <string>/Users/gustavosilva/code/smiles-search/rodar_local.sh</string>
+  </array>
+
+  <!-- Roda às 8h, 12h, 16h e 20h. Se o Mac estiver dormindo no horário,
+       o launchd executa assim que ele acordar. -->
+  <key>StartCalendarInterval</key>
+  <array>
+    <dict><key>Hour</key><integer>8</integer><key>Minute</key><integer>0</integer></dict>
+    <dict><key>Hour</key><integer>12</integer><key>Minute</key><integer>0</integer></dict>
+    <dict><key>Hour</key><integer>16</integer><key>Minute</key><integer>0</integer></dict>
+    <dict><key>Hour</key><integer>20</integer><key>Minute</key><integer>0</integer></dict>
+  </array>
+
+  <key>StandardOutPath</key>
+  <string>/Users/gustavosilva/code/smiles-search/monitor.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/gustavosilva/code/smiles-search/monitor.log</string>
+</dict>
+</plist>
