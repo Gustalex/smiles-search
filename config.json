@@ -12,9 +12,9 @@
   },
 
   "datas": {
-    "antecedencia_min_dias": 15,
-    "antecedencia_max_dias": 120,
-    "passo_dias": 14
+    "antecedencia_min_dias": 90,
+    "antecedencia_max_dias": 270,
+    "passo_dias": 7
   },
 
   "tarifas_aceitas": ["SMILES_CLUB", "SMILES"],
@@ -25,52 +25,31 @@
   "bloqueios_consecutivos_para_abortar": 6,
 
   "limites_alerta_milhas": {
-    "nacional": 12000,
-    "america_sul": 25000,
-    "america_norte": 45000,
-    "europa": 55000
+    "nordeste": 10000,
+    "centro_oeste": 12000,
+    "sudeste": 12000
   },
 
   "destinos": {
-    "GRU": { "nome": "São Paulo (Guarulhos)", "regiao": "nacional" },
-    "CGH": { "nome": "São Paulo (Congonhas)", "regiao": "nacional" },
-    "VCP": { "nome": "Campinas", "regiao": "nacional" },
-    "GIG": { "nome": "Rio de Janeiro (Galeão)", "regiao": "nacional" },
-    "SDU": { "nome": "Rio de Janeiro (Santos Dumont)", "regiao": "nacional" },
-    "BSB": { "nome": "Brasília", "regiao": "nacional" },
-    "CNF": { "nome": "Belo Horizonte", "regiao": "nacional" },
-    "SSA": { "nome": "Salvador", "regiao": "nacional" },
-    "REC": { "nome": "Recife", "regiao": "nacional" },
-    "FOR": { "nome": "Fortaleza", "regiao": "nacional" },
-    "NAT": { "nome": "Natal", "regiao": "nacional" },
-    "FEN": { "nome": "Fernando de Noronha", "regiao": "nacional", "alerta": 25000 },
-    "POA": { "nome": "Porto Alegre", "regiao": "nacional" },
-    "CWB": { "nome": "Curitiba", "regiao": "nacional" },
-    "FLN": { "nome": "Florianópolis", "regiao": "nacional" },
-    "IGU": { "nome": "Foz do Iguaçu", "regiao": "nacional" },
-    "MAO": { "nome": "Manaus", "regiao": "nacional" },
-    "BEL": { "nome": "Belém", "regiao": "nacional" },
-    "VIX": { "nome": "Vitória", "regiao": "nacional" },
+    "SSA": { "nome": "Salvador", "regiao": "nordeste" },
+    "REC": { "nome": "Recife", "regiao": "nordeste" },
+    "FOR": { "nome": "Fortaleza", "regiao": "nordeste" },
+    "NAT": { "nome": "Natal", "regiao": "nordeste" },
+    "JPA": { "nome": "João Pessoa", "regiao": "nordeste" },
+    "AJU": { "nome": "Aracaju", "regiao": "nordeste" },
+    "THE": { "nome": "Teresina", "regiao": "nordeste" },
+    "SLZ": { "nome": "São Luís", "regiao": "nordeste" },
 
-    "EZE": { "nome": "Buenos Aires", "regiao": "america_sul" },
-    "SCL": { "nome": "Santiago", "regiao": "america_sul" },
-    "MVD": { "nome": "Montevidéu", "regiao": "america_sul" },
-    "LIM": { "nome": "Lima", "regiao": "america_sul" },
-    "BOG": { "nome": "Bogotá", "regiao": "america_sul" },
+    "BSB": { "nome": "Brasília", "regiao": "centro_oeste" },
+    "GYN": { "nome": "Goiânia", "regiao": "centro_oeste" },
+    "CGR": { "nome": "Campo Grande", "regiao": "centro_oeste" },
+    "CGB": { "nome": "Cuiabá", "regiao": "centro_oeste" },
 
-    "PTY": { "nome": "Cidade do Panamá", "regiao": "america_norte" },
-    "CUN": { "nome": "Cancún", "regiao": "america_norte" },
-    "MIA": { "nome": "Miami", "regiao": "america_norte" },
-    "MCO": { "nome": "Orlando", "regiao": "america_norte" },
-    "JFK": { "nome": "Nova York", "regiao": "america_norte" },
-
-    "LIS": { "nome": "Lisboa", "regiao": "europa" },
-    "OPO": { "nome": "Porto", "regiao": "europa" },
-    "MAD": { "nome": "Madri", "regiao": "europa" },
-    "BCN": { "nome": "Barcelona", "regiao": "europa" },
-    "CDG": { "nome": "Paris", "regiao": "europa" },
-    "FCO": { "nome": "Roma", "regiao": "europa" },
-    "AMS": { "nome": "Amsterdã", "regiao": "europa" },
-    "LHR": { "nome": "Londres", "regiao": "europa" }
+    "GRU": { "nome": "São Paulo (Guarulhos)", "regiao": "sudeste" },
+    "CGH": { "nome": "São Paulo (Congonhas)", "regiao": "sudeste" },
+    "GIG": { "nome": "Rio de Janeiro (Galeão)", "regiao": "sudeste" },
+    "SDU": { "nome": "Rio de Janeiro (Santos Dumont)", "regiao": "sudeste" },
+    "CNF": { "nome": "Belo Horizonte", "regiao": "sudeste" },
+    "VIX": { "nome": "Vitória", "regiao": "sudeste" }
   }
 }
