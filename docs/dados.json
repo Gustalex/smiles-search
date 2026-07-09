@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-07-09T15:42:13-03:00",
+ "gerado_em": "2026-07-09T15:51:42-03:00",
  "origem": "MCZ",
  "status": "bloqueado",
  "estatisticas": {
@@ -12,10 +12,10 @@
  "top_ofertas": [],
  "resultados": [
   {
-   "destino": "GRU",
-   "nome": "São Paulo (Guarulhos)",
-   "regiao": "nacional",
-   "limite_alerta": 12000,
+   "destino": "SSA",
+   "nome": "Salvador",
+   "regiao": "nordeste",
+   "limite_alerta": 10000,
    "milhas": null,
    "detalhes": null,
    "variacao": null,
