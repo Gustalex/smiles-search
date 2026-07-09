@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-07-09T15:12:03-03:00",
+ "gerado_em": "2026-07-09T15:42:13-03:00",
  "origem": "MCZ",
  "status": "bloqueado",
  "estatisticas": {
@@ -9,6 +9,7 @@
   "bloqueadas": 6,
   "erros": 0
  },
+ "top_ofertas": [],
  "resultados": [
   {
    "destino": "GRU",
