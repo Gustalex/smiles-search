@@ -19,6 +19,8 @@
 
   "tarifas_aceitas": ["SMILES_CLUB", "SMILES"],
 
+  "top_ofertas": 10,
+
   "pausa_entre_consultas_seg": 1.5,
   "bloqueios_consecutivos_para_abortar": 6,
 

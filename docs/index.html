@@ -72,6 +72,22 @@
   .tabela-datas td { padding: 4px 6px; border-top: 1px solid var(--borda); color: var(--texto2); }
   .tabela-datas td.m { color: var(--texto); font-weight: 600; text-align: right; }
   .vazio { text-align: center; color: var(--texto2); padding: 60px 0; }
+
+  .top { margin: 22px 0 28px; display: none; }
+  .top h2 { font-size: 1.05rem; margin-bottom: 12px; }
+  .top-item {
+    display: flex; align-items: center; gap: 12px; padding: 10px 14px;
+    background: var(--card); border: 1px solid var(--borda); border-radius: 12px;
+    margin-bottom: 8px; text-decoration: none; color: var(--texto);
+  }
+  .top-item:hover { border-color: var(--laranja); }
+  .top-pos { font-weight: 800; color: var(--texto2); width: 26px; text-align: center; font-size: .9rem; }
+  .top-item:nth-child(2) .top-pos { color: var(--laranja); }
+  .top-dest { flex: 1; min-width: 0; }
+  .top-dest .n { font-weight: 650; font-size: .92rem; }
+  .top-dest .d { color: var(--texto2); font-size: .76rem; margin-top: 1px; }
+  .top-milhas { font-weight: 750; color: var(--laranja); font-size: 1.05rem; white-space: nowrap; }
+  .top-milhas small { color: var(--texto2); font-weight: 400; font-size: .7rem; }
   footer { margin-top: 34px; color: var(--texto2); font-size: .75rem; text-align: center; line-height: 1.6; }
 </style>
 </head>
@@ -83,6 +99,11 @@
   </header>
 
   <div class="banner" id="banner"></div>
+
+  <section class="top" id="top">
+    <h2>🏆 As mais baratas — qualquer destino, qualquer data</h2>
+    <div id="top-lista"></div>
+  </section>
 
   <div class="controles">
     <div class="chips" id="chips"></div>
@@ -216,6 +237,26 @@ async function iniciar() {
   const quando = new Date(dados.gerado_em).toLocaleString("pt-BR", { dateStyle: "short", timeStyle: "short" });
   document.getElementById("atualizado").textContent =
     `Atualizado em ${quando} · ${dados.resultados.filter(r => r.milhas).length} destino(s) com voos`;
+
+  if (dados.top_ofertas && dados.top_ofertas.length) {
+    const alvo = document.getElementById("top-lista");
+    dados.top_ofertas.forEach((o, i) => {
+      const a = document.createElement("a");
+      a.className = "top-item";
+      a.href = o.link;
+      a.target = "_blank";
+      a.rel = "noopener";
+      a.innerHTML = `
+        <span class="top-pos">${i + 1}º</span>
+        <span class="top-dest">
+          <span class="n">${o.nome} (${o.destino})</span>
+          <span class="d" style="display:block">${dataBr(o.data)} · ${o.cia}${o.tipo_tarifa === "SMILES_CLUB" ? " · Clube" : ""}</span>
+        </span>
+        <span class="top-milhas">${fmt(o.milhas)} <small>milhas</small></span>`;
+      alvo.appendChild(a);
+    });
+    document.getElementById("top").style.display = "block";
+  }
 
   if (dados.status === "bloqueado") {
     banner.className = "banner erro";

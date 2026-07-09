@@ -404,12 +404,30 @@ def executar(args):
     else:
         status_geral = "ok"
 
+    # Top ofertas: as N combinações (destino, data) mais baratas da varredura
+    ofertas = [
+        {
+            "destino": r["destino"],
+            "nome": r["nome"],
+            "regiao": r["regiao"],
+            "data": v["data"],
+            "milhas": v["milhas"],
+            "cia": v["cia"],
+            "tipo_tarifa": v.get("tipo_tarifa"),
+            "link": link_emissao(cfg["origem"], r["destino"], v["data"]),
+        }
+        for r in resultados
+        for v in r["datas"]
+    ]
+    ofertas.sort(key=lambda o: o["milhas"])
+
     agora = datetime.now(FUSO)
     dados = {
         "gerado_em": agora.isoformat(timespec="seconds"),
         "origem": cfg["origem"],
         "status": status_geral,
         "estatisticas": stats,
+        "top_ofertas": ofertas[: cfg.get("top_ofertas", 10)],
         "resultados": resultados,
     }
     ARQ_DADOS.parent.mkdir(parents=True, exist_ok=True)
