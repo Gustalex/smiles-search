@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Monitor Smiles ✈️</title>
+<style>
+  :root {
+    --bg: #0e1117; --card: #171c26; --card2: #1e2532;
+    --texto: #e6e9ef; --texto2: #8b94a7; --borda: #2a3244;
+    --laranja: #ff7a00; --verde: #2dd4a7; --vermelho: #ff5c72; --amarelo: #ffce4d;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg); color: var(--texto); min-height: 100vh;
+    font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    padding: 24px 16px 60px;
+  }
+  .container { max-width: 1000px; margin: 0 auto; }
+  header { margin-bottom: 20px; }
+  h1 { font-size: 1.5rem; display: flex; align-items: center; gap: 10px; }
+  h1 .origem { color: var(--laranja); }
+  .sub { color: var(--texto2); font-size: .85rem; margin-top: 6px; }
+  .banner {
+    border-radius: 10px; padding: 12px 16px; margin: 16px 0; font-size: .9rem;
+    border: 1px solid var(--borda); display: none;
+  }
+  .banner.aviso { display: block; background: #3a2a10; border-color: #6b4d1a; color: var(--amarelo); }
+  .banner.erro  { display: block; background: #3a1520; border-color: #6b2436; color: var(--vermelho); }
+  .banner.info  { display: block; background: var(--card); color: var(--texto2); }
+
+  .controles { display: flex; flex-wrap: wrap; gap: 10px; margin: 18px 0; align-items: center; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; }
+  .chip {
+    border: 1px solid var(--borda); background: var(--card); color: var(--texto2);
+    border-radius: 999px; padding: 7px 14px; font-size: .82rem; cursor: pointer;
+  }
+  .chip.ativo { background: var(--laranja); border-color: var(--laranja); color: #14100a; font-weight: 600; }
+  #busca {
+    flex: 1; min-width: 160px; background: var(--card); border: 1px solid var(--borda);
+    color: var(--texto); border-radius: 999px; padding: 8px 16px; font-size: .85rem; outline: none;
+  }
+
+  .grade { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 14px; }
+  .card {
+    background: var(--card); border: 1px solid var(--borda); border-radius: 14px;
+    padding: 16px; position: relative; overflow: hidden;
+  }
+  .card.alerta { border-color: var(--laranja); box-shadow: 0 0 0 1px var(--laranja); }
+  .fogo { position: absolute; top: 12px; right: 14px; font-size: 1.1rem; }
+  .cidade { font-weight: 650; font-size: 1.02rem; padding-right: 28px; }
+  .codigo { color: var(--texto2); font-size: .78rem; margin-top: 2px; }
+  .preco { margin: 12px 0 4px; display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+  .milhas { font-size: 1.55rem; font-weight: 700; color: var(--laranja); }
+  .milhas.sem { color: var(--texto2); font-size: 1rem; font-weight: 400; }
+  .var { font-size: .78rem; font-weight: 600; }
+  .var.baixou { color: var(--verde); }
+  .var.subiu { color: var(--vermelho); }
+  .meta { color: var(--texto2); font-size: .8rem; line-height: 1.5; }
+  .badge {
+    display: inline-block; font-size: .68rem; padding: 2px 8px; border-radius: 999px;
+    background: var(--card2); border: 1px solid var(--borda); color: var(--texto2); margin-left: 6px;
+  }
+  .acoes { margin-top: 12px; display: flex; gap: 8px; align-items: center; }
+  .btn {
+    background: var(--laranja); color: #14100a; text-decoration: none; font-weight: 600;
+    font-size: .8rem; padding: 8px 14px; border-radius: 8px;
+  }
+  details { margin-top: 10px; }
+  summary { cursor: pointer; color: var(--texto2); font-size: .78rem; }
+  .tabela-datas { width: 100%; margin-top: 8px; font-size: .78rem; border-collapse: collapse; }
+  .tabela-datas td { padding: 4px 6px; border-top: 1px solid var(--borda); color: var(--texto2); }
+  .tabela-datas td.m { color: var(--texto); font-weight: 600; text-align: right; }
+  .vazio { text-align: center; color: var(--texto2); padding: 60px 0; }
+  footer { margin-top: 34px; color: var(--texto2); font-size: .75rem; text-align: center; line-height: 1.6; }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>✈️ Monitor Smiles — saindo de <span class="origem" id="origem">…</span></h1>
+    <div class="sub" id="atualizado">Carregando…</div>
+  </header>
+
+  <div class="banner" id="banner"></div>
+
+  <div class="controles">
+    <div class="chips" id="chips"></div>
+    <input id="busca" type="search" placeholder="Buscar destino…">
+  </div>
+
+  <div class="grade" id="grade"></div>
+  <div class="vazio" id="vazio" style="display:none">Nada encontrado com esses filtros.</div>
+
+  <footer>
+    Preços por trecho (só ida), em milhas, sem taxa de embarque · tarifa Clube Smiles quando disponível.<br>
+    Os valores mudam o tempo todo — confirme no site da Smiles antes de emitir. Projeto não oficial, sem vínculo com a Smiles/GOL.
+  </footer>
+</div>
+
+<script>
+const REGIOES = {
+  "": "Todos",
+  "nacional": "Brasil",
+  "america_sul": "América do Sul",
+  "america_norte": "América do Norte/Central",
+  "europa": "Europa"
+};
+let dados = null, filtroRegiao = "", filtroTexto = "";
+
+const fmt = n => n.toLocaleString("pt-BR");
+
+function dataBr(iso) {
+  const [a, m, d] = iso.split("-");
+  return `${d}/${m}/${a}`;
+}
+
+function render() {
+  const grade = document.getElementById("grade");
+  const vazio = document.getElementById("vazio");
+  grade.innerHTML = "";
+  if (!dados) return;
+
+  const lista = dados.resultados.filter(r =>
+    (!filtroRegiao || r.regiao === filtroRegiao) &&
+    (!filtroTexto ||
+      r.nome.toLowerCase().includes(filtroTexto) ||
+      r.destino.toLowerCase().includes(filtroTexto))
+  );
+  vazio.style.display = lista.length ? "none" : "block";
+
+  for (const r of lista) {
+    const alerta = r.milhas && r.limite_alerta && r.milhas <= r.limite_alerta;
+    const card = document.createElement("div");
+    card.className = "card" + (alerta ? " alerta" : "");
+
+    let corpo = `
+      ${alerta ? '<div class="fogo" title="Abaixo do seu limite de alerta">🔥</div>' : ""}
+      <div class="cidade">${r.nome}</div>
+      <div class="codigo">${dados.origem} → ${r.destino} · ${REGIOES[r.regiao] || ""}</div>`;
+
+    if (r.milhas) {
+      const d = r.detalhes;
+      let varHtml = "";
+      if (r.variacao) {
+        const baixou = r.variacao < 0;
+        varHtml = `<span class="var ${baixou ? "baixou" : "subiu"}">
+          ${baixou ? "▼" : "▲"} ${fmt(Math.abs(r.variacao))}</span>`;
+      }
+      corpo += `
+        <div class="preco">
+          <span class="milhas">${fmt(r.milhas)}</span>
+          <span style="color:var(--texto2);font-size:.8rem">milhas</span>${varHtml}
+        </div>
+        <div class="meta">
+          ${dataBr(d.data)}${d.horario ? " às " + d.horario : ""} · ${d.cia}
+          · ${d.paradas === 0 ? "direto" : (d.paradas ?? "?") + " parada(s)"}
+          ${d.tipo_tarifa === "SMILES_CLUB" ? '<span class="badge">Clube</span>' : ""}
+        </div>
+        <div class="acoes"><a class="btn" href="${r.link}" target="_blank" rel="noopener">Ver na Smiles →</a></div>`;
+      if (r.datas && r.datas.length > 1) {
+        corpo += `<details><summary>Outras datas pesquisadas (${r.datas.length})</summary>
+          <table class="tabela-datas">` +
+          r.datas.map(v => `<tr><td>${dataBr(v.data)}</td><td>${v.cia}</td><td class="m">${fmt(v.milhas)}</td></tr>`).join("") +
+          `</table></details>`;
+      }
+    } else {
+      corpo += `<div class="preco"><span class="milhas sem">Nenhum voo encontrado nas datas pesquisadas</span></div>`;
+    }
+    card.innerHTML = corpo;
+    grade.appendChild(card);
+  }
+}
+
+function montarChips() {
+  const chips = document.getElementById("chips");
+  for (const [valor, rotulo] of Object.entries(REGIOES)) {
+    const b = document.createElement("button");
+    b.className = "chip" + (valor === "" ? " ativo" : "");
+    b.textContent = rotulo;
+    b.onclick = () => {
+      filtroRegiao = valor;
+      document.querySelectorAll(".chip").forEach(c => c.classList.remove("ativo"));
+      b.classList.add("ativo");
+      render();
+    };
+    chips.appendChild(b);
+  }
+}
+
+document.getElementById("busca").addEventListener("input", e => {
+  filtroTexto = e.target.value.trim().toLowerCase();
+  render();
+});
+
+async function iniciar() {
+  montarChips();
+  const banner = document.getElementById("banner");
+  try {
+    const resp = await fetch("dados.json?cache=" + Date.now());
+    dados = await resp.json();
+  } catch {
+    banner.className = "banner erro";
+    banner.textContent = "Não consegui carregar os dados (dados.json).";
+    return;
+  }
+  document.getElementById("origem").textContent = dados.origem || "?";
+
+  if (dados.status === "aguardando" || !dados.gerado_em) {
+    document.getElementById("atualizado").textContent = "Aguardando a primeira execução do monitor…";
+    banner.className = "banner info";
+    banner.textContent = "Rode o workflow no GitHub Actions (aba Actions → Monitor Smiles → Run workflow) para gerar os primeiros dados.";
+    return;
+  }
+
+  const quando = new Date(dados.gerado_em).toLocaleString("pt-BR", { dateStyle: "short", timeStyle: "short" });
+  document.getElementById("atualizado").textContent =
+    `Atualizado em ${quando} · ${dados.resultados.filter(r => r.milhas).length} destino(s) com voos`;
+
+  if (dados.status === "bloqueado") {
+    banner.className = "banner erro";
+    banner.textContent = "⚠️ A última busca foi bloqueada pela Smiles — os dados abaixo podem estar desatualizados. Veja no README como atualizar a chave da API.";
+  } else if (dados.status === "parcial") {
+    banner.className = "banner aviso";
+    banner.textContent = "⚠️ Algumas consultas falharam na última busca — parte dos preços pode estar desatualizada.";
+  }
+  render();
+}
+iniciar();
+</script>
+</body>
+</html>

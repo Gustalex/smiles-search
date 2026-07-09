@@ -1,0 +1,31 @@
+{
+  "requestedFlightSegmentList": [
+    {
+      "flightList": [
+        {
+          "airline": { "name": "GOL" },
+          "stops": 0,
+          "duration": { "hours": 3, "minutes": 10 },
+          "departure": { "date": "2026-08-15T08:30:00", "airport": { "code": "MCZ" } },
+          "arrival": { "date": "2026-08-15T11:40:00", "airport": { "code": "GRU" } },
+          "fareList": [
+            { "type": "SMILES_CLUB", "miles": 9500, "money": 0 },
+            { "type": "SMILES", "miles": 12000, "money": 0 },
+            { "type": "MONEY", "miles": 0, "money": 512.3 }
+          ]
+        },
+        {
+          "airline": { "name": "GOL" },
+          "stops": 1,
+          "duration": { "hours": 5, "minutes": 45 },
+          "departure": { "date": "2026-08-15T14:00:00", "airport": { "code": "MCZ" } },
+          "arrival": { "date": "2026-08-15T19:45:00", "airport": { "code": "GRU" } },
+          "fareList": [
+            { "type": "SMILES_CLUB", "miles": 7300, "money": 0 },
+            { "type": "SMILES", "miles": 9100, "money": 0 }
+          ]
+        }
+      ]
+    }
+  ]
+}
