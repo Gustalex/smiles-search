@@ -62,12 +62,10 @@ def api_key(cfg):
 class ClienteNavegador:
     """Faz as consultas de dentro de um Chrome invisível (driblando a Akamai).
 
-    Estratégia: abre a página de emissão com uma busca real (isso faz o sensor
-    da Akamai validar a sessão e gerar os cookies _abck/bm_*). Depois, as
-    consultas são feitas via fetch() de dentro da página. Se o fetch for
-    bloqueado, cai para o modo "navegação": abre a página de busca para cada
-    consulta e intercepta a resposta da API que o próprio site faz (mais lento,
-    porém indistinguível de um usuário real).
+    Estratégia: abre a página de emissão (isso faz o sensor da Akamai validar
+    a sessão e gerar os cookies _abck/bm_*) e consulta a API via fetch() de
+    dentro da página. O bloqueio é intermitente, então cada consulta tem
+    retentativas com pausa e recarga da página para renovar os cookies.
     """
 
     _JS_FETCH = """async ({ url, headers }) => {
@@ -84,9 +82,6 @@ class ClienteNavegador:
 
         self._cfg = cfg
         self._headers = {"x-api-key": api_key(cfg), "Channel": "WEB"}
-        self._modo_navegacao = False
-        self._falhas_fetch = 0
-
         self._pw = sync_playwright().start()
         try:
             # channel="chromium" usa o headless "novo", bem mais parecido
@@ -115,47 +110,46 @@ class ClienteNavegador:
         )
         self._page = contexto.new_page()
 
-        # "Esquenta" a sessão com uma busca real na página de emissão:
-        # é isso que faz o sensor da Akamai liberar os cookies.
-        primeira_data = (date.today() + timedelta(days=30)).isoformat()
+        # "Esquenta" a sessão abrindo a página de busca: é isso que faz o
+        # sensor da Akamai liberar os cookies. Nem sempre valida de primeira,
+        # então insistimos algumas vezes.
         print("Abrindo a busca da Smiles para validar a sessão (anti-bot)...")
-        status, _ = self._consultar_navegando("GRU", primeira_data)
-        if status == 200:
-            print("Sessão validada pela Akamai.")
-        else:
-            print(f"Aviso: busca de validação retornou HTTP {status} — seguindo mesmo assim.")
+        self._revalidar()
 
-    def _consultar_navegando(self, destino, data):
-        """Abre a página de busca e intercepta a resposta da API feita pelo site."""
-        url = link_emissao(self._cfg["origem"], destino, data)
+    def _revalidar(self):
+        """(Re)abre a página de busca para renovar os cookies da Akamai."""
+        primeira_data = (date.today() + timedelta(days=30)).isoformat()
+        url = link_emissao(self._cfg["origem"], "GRU", primeira_data)
         try:
-            with self._page.expect_response(
-                lambda r: "airlines/search" in r.url, timeout=60_000
-            ) as espera:
-                self._page.goto(url, wait_until="domcontentloaded", timeout=60_000)
-            resposta = espera.value
-            return resposta.status, resposta.text()
+            self._page.goto(url, wait_until="domcontentloaded", timeout=60_000)
         except Exception as e:
-            return 0, f"navegacao: {type(e).__name__}"
+            print(f"  aviso: recarga da página falhou ({type(e).__name__})")
+            return
+        for x, y in ((400, 300), (800, 500)):
+            self._page.mouse.move(x, y, steps=10)
+            self._page.wait_for_timeout(500)
+        self._page.wait_for_timeout(3_000)
 
     def get(self, url, params):
-        destino = params["destinationAirportCode"]
-        data = params["departureDate"]
-        if self._modo_navegacao:
-            return self._consultar_navegando(destino, data)
+        """Consulta via fetch() de dentro da página, com retentativas.
 
-        resultado = self._page.evaluate(
-            self._JS_FETCH,
-            {"url": f"{url}?{urlencode(params)}", "headers": self._headers},
-        )
-        if resultado["status"] in STATUS_BLOQUEIO:
-            self._falhas_fetch += 1
-            if self._falhas_fetch >= 2:
-                print("fetch() bloqueado — mudando para o modo navegação (mais lento, mais confiável).")
-                self._modo_navegacao = True
-            return self._consultar_navegando(destino, data)
-        self._falhas_fetch = 0
-        return resultado["status"], resultado["body"]
+        O bloqueio da Akamai é intermitente: uma consulta pode falhar e a
+        seguinte passar. Então insistimos com pausas e, na segunda falha,
+        recarregamos a página de busca para renovar os cookies.
+        """
+        alvo = f"{url}?{urlencode(params)}"
+        ultimo = {"status": 0, "body": ""}
+        for tentativa in range(3):
+            resultado = self._page.evaluate(
+                self._JS_FETCH, {"url": alvo, "headers": self._headers}
+            )
+            if resultado["status"] not in STATUS_BLOQUEIO:
+                return resultado["status"], resultado["body"]
+            ultimo = resultado
+            self._page.wait_for_timeout(int(2_500 + random.uniform(0, 2_000)))
+            if tentativa == 1:
+                self._revalidar()
+        return ultimo["status"], (ultimo["body"] or "")[:120]
 
     def close(self):
         try:
