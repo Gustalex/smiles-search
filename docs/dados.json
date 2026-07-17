@@ -1,12 +1,12 @@
 {
- "gerado_em": "2026-07-17T13:41:27-03:00",
+ "gerado_em": "2026-07-17T15:49:39-03:00",
  "origem": "MCZ",
  "status": "parcial",
  "estatisticas": {
-  "consultas": 100,
-  "com_voos": 94,
-  "sem_voos": 0,
-  "bloqueadas": 6,
+  "consultas": 824,
+  "com_voos": 741,
+  "sem_voos": 8,
+  "bloqueadas": 75,
   "erros": 0
  },
  "top_ofertas": [
@@ -14,101 +14,111 @@
    "destino": "SSA",
    "nome": "Salvador",
    "regiao": "nordeste",
-   "data": "2026-10-15",
-   "milhas": 19100,
+   "data": "2026-08-14",
+   "alta": false,
+   "milhas": 11600,
    "cia": "GOL (G3)",
    "tipo_tarifa": "SMILES_CLUB",
-   "link": "https://www.smiles.com.br/mfe/emissao-passagem/?adults=1&cabin=ECONOMIC&children=0&departureDate=1792033200000&infants=0&isElegible=false&isFlexibleDateChecked=false&returnDate=&searchType=g3&segments=1&tripType=2&originAirport=MCZ&originCity=&originCountry=&originAirportIsAny=false&destinationAirport=SSA&destinCity=&destinCountry=&destinAirportIsAny=false&novo-resultado-voos=true"
+   "link": "https://www.smiles.com.br/mfe/emissao-passagem/?adults=1&cabin=ECONOMIC&children=0&departureDate=1786676400000&infants=0&isElegible=false&isFlexibleDateChecked=false&returnDate=&searchType=g3&segments=1&tripType=2&originAirport=MCZ&originCity=&originCountry=&originAirportIsAny=false&destinationAirport=SSA&destinCity=&destinCountry=&destinAirportIsAny=false&novo-resultado-voos=true"
   },
   {
-   "destino": "SSA",
-   "nome": "Salvador",
-   "regiao": "nordeste",
+   "destino": "GYN",
+   "nome": "Goiânia",
+   "regiao": "centro_oeste",
+   "data": "2026-09-22",
+   "alta": false,
+   "milhas": 16200,
+   "cia": "GOL (G3)",
+   "tipo_tarifa": "SMILES_CLUB",
+   "link": "https://www.smiles.com.br/mfe/emissao-passagem/?adults=1&cabin=ECONOMIC&children=0&departureDate=1790046000000&infants=0&isElegible=false&isFlexibleDateChecked=false&returnDate=&searchType=g3&segments=1&tripType=2&originAirport=MCZ&originCity=&originCountry=&originAirportIsAny=false&destinationAirport=GYN&destinCity=&destinCountry=&destinAirportIsAny=false&novo-resultado-voos=true"
+  },
+  {
+   "destino": "GYN",
+   "nome": "Goiânia",
+   "regiao": "centro_oeste",
+   "data": "2026-09-25",
+   "alta": false,
+   "milhas": 16200,
+   "cia": "GOL (G3)",
+   "tipo_tarifa": "SMILES_CLUB",
+   "link": "https://www.smiles.com.br/mfe/emissao-passagem/?adults=1&cabin=ECONOMIC&children=0&departureDate=1790305200000&infants=0&isElegible=false&isFlexibleDateChecked=false&returnDate=&searchType=g3&segments=1&tripType=2&originAirport=MCZ&originCity=&originCountry=&originAirportIsAny=false&destinationAirport=GYN&destinCity=&destinCountry=&destinAirportIsAny=false&novo-resultado-voos=true"
+  },
+  {
+   "destino": "GYN",
+   "nome": "Goiânia",
+   "regiao": "centro_oeste",
+   "data": "2026-10-01",
+   "alta": false,
+   "milhas": 16200,
+   "cia": "GOL (G3)",
+   "tipo_tarifa": "SMILES_CLUB",
+   "link": "https://www.smiles.com.br/mfe/emissao-passagem/?adults=1&cabin=ECONOMIC&children=0&departureDate=1790823600000&infants=0&isElegible=false&isFlexibleDateChecked=false&returnDate=&searchType=g3&segments=1&tripType=2&originAirport=MCZ&originCity=&originCountry=&originAirportIsAny=false&destinationAirport=GYN&destinCity=&destinCountry=&destinAirportIsAny=false&novo-resultado-voos=true"
+  },
+  {
+   "destino": "GYN",
+   "nome": "Goiânia",
+   "regiao": "centro_oeste",
+   "data": "2026-10-04",
+   "alta": false,
+   "milhas": 16200,
+   "cia": "GOL (G3)",
+   "tipo_tarifa": "SMILES_CLUB",
+   "link": "https://www.smiles.com.br/mfe/emissao-passagem/?adults=1&cabin=ECONOMIC&children=0&departureDate=1791082800000&infants=0&isElegible=false&isFlexibleDateChecked=false&returnDate=&searchType=g3&segments=1&tripType=2&originAirport=MCZ&originCity=&originCountry=&originAirportIsAny=false&destinationAirport=GYN&destinCity=&destinCountry=&destinAirportIsAny=false&novo-resultado-voos=true"
+  },
+  {
+   "destino": "GYN",
+   "nome": "Goiânia",
+   "regiao": "centro_oeste",
+   "data": "2026-10-07",
+   "alta": false,
+   "milhas": 16200,
+   "cia": "GOL (G3)",
+   "tipo_tarifa": "SMILES_CLUB",
+   "link": "https://www.smiles.com.br/mfe/emissao-passagem/?adults=1&cabin=ECONOMIC&children=0&departureDate=1791342000000&infants=0&isElegible=false&isFlexibleDateChecked=false&returnDate=&searchType=g3&segments=1&tripType=2&originAirport=MCZ&originCity=&originCountry=&originAirportIsAny=false&destinationAirport=GYN&destinCity=&destinCountry=&destinAirportIsAny=false&novo-resultado-voos=true"
+  },
+  {
+   "destino": "GYN",
+   "nome": "Goiânia",
+   "regiao": "centro_oeste",
+   "data": "2026-10-16",
+   "alta": false,
+   "milhas": 16200,
+   "cia": "GOL (G3)",
+   "tipo_tarifa": "SMILES_CLUB",
+   "link": "https://www.smiles.com.br/mfe/emissao-passagem/?adults=1&cabin=ECONOMIC&children=0&departureDate=1792119600000&infants=0&isElegible=false&isFlexibleDateChecked=false&returnDate=&searchType=g3&segments=1&tripType=2&originAirport=MCZ&originCity=&originCountry=&originAirportIsAny=false&destinationAirport=GYN&destinCity=&destinCountry=&destinAirportIsAny=false&novo-resultado-voos=true"
+  },
+  {
+   "destino": "GYN",
+   "nome": "Goiânia",
+   "regiao": "centro_oeste",
    "data": "2026-10-22",
-   "milhas": 19100,
+   "alta": false,
+   "milhas": 16200,
    "cia": "GOL (G3)",
    "tipo_tarifa": "SMILES_CLUB",
-   "link": "https://www.smiles.com.br/mfe/emissao-passagem/?adults=1&cabin=ECONOMIC&children=0&departureDate=1792638000000&infants=0&isElegible=false&isFlexibleDateChecked=false&returnDate=&searchType=g3&segments=1&tripType=2&originAirport=MCZ&originCity=&originCountry=&originAirportIsAny=false&destinationAirport=SSA&destinCity=&destinCountry=&destinAirportIsAny=false&novo-resultado-voos=true"
+   "link": "https://www.smiles.com.br/mfe/emissao-passagem/?adults=1&cabin=ECONOMIC&children=0&departureDate=1792638000000&infants=0&isElegible=false&isFlexibleDateChecked=false&returnDate=&searchType=g3&segments=1&tripType=2&originAirport=MCZ&originCity=&originCountry=&originAirportIsAny=false&destinationAirport=GYN&destinCity=&destinCountry=&destinAirportIsAny=false&novo-resultado-voos=true"
   },
   {
-   "destino": "SSA",
-   "nome": "Salvador",
-   "regiao": "nordeste",
-   "data": "2026-10-29",
-   "milhas": 19100,
+   "destino": "GYN",
+   "nome": "Goiânia",
+   "regiao": "centro_oeste",
+   "data": "2026-10-25",
+   "alta": false,
+   "milhas": 16200,
    "cia": "GOL (G3)",
    "tipo_tarifa": "SMILES_CLUB",
-   "link": "https://www.smiles.com.br/mfe/emissao-passagem/?adults=1&cabin=ECONOMIC&children=0&departureDate=1793242800000&infants=0&isElegible=false&isFlexibleDateChecked=false&returnDate=&searchType=g3&segments=1&tripType=2&originAirport=MCZ&originCity=&originCountry=&originAirportIsAny=false&destinationAirport=SSA&destinCity=&destinCountry=&destinAirportIsAny=false&novo-resultado-voos=true"
+   "link": "https://www.smiles.com.br/mfe/emissao-passagem/?adults=1&cabin=ECONOMIC&children=0&departureDate=1792897200000&infants=0&isElegible=false&isFlexibleDateChecked=false&returnDate=&searchType=g3&segments=1&tripType=2&originAirport=MCZ&originCity=&originCountry=&originAirportIsAny=false&destinationAirport=GYN&destinCity=&destinCountry=&destinAirportIsAny=false&novo-resultado-voos=true"
   },
   {
-   "destino": "SSA",
-   "nome": "Salvador",
-   "regiao": "nordeste",
-   "data": "2026-11-05",
-   "milhas": 19100,
+   "destino": "GYN",
+   "nome": "Goiânia",
+   "regiao": "centro_oeste",
+   "data": "2026-11-06",
+   "alta": false,
+   "milhas": 16200,
    "cia": "GOL (G3)",
    "tipo_tarifa": "SMILES_CLUB",
-   "link": "https://www.smiles.com.br/mfe/emissao-passagem/?adults=1&cabin=ECONOMIC&children=0&departureDate=1793847600000&infants=0&isElegible=false&isFlexibleDateChecked=false&returnDate=&searchType=g3&segments=1&tripType=2&originAirport=MCZ&originCity=&originCountry=&originAirportIsAny=false&destinationAirport=SSA&destinCity=&destinCountry=&destinAirportIsAny=false&novo-resultado-voos=true"
-  },
-  {
-   "destino": "SSA",
-   "nome": "Salvador",
-   "regiao": "nordeste",
-   "data": "2026-11-12",
-   "milhas": 19100,
-   "cia": "GOL (G3)",
-   "tipo_tarifa": "SMILES_CLUB",
-   "link": "https://www.smiles.com.br/mfe/emissao-passagem/?adults=1&cabin=ECONOMIC&children=0&departureDate=1794452400000&infants=0&isElegible=false&isFlexibleDateChecked=false&returnDate=&searchType=g3&segments=1&tripType=2&originAirport=MCZ&originCity=&originCountry=&originAirportIsAny=false&destinationAirport=SSA&destinCity=&destinCountry=&destinAirportIsAny=false&novo-resultado-voos=true"
-  },
-  {
-   "destino": "SSA",
-   "nome": "Salvador",
-   "regiao": "nordeste",
-   "data": "2026-11-19",
-   "milhas": 19100,
-   "cia": "GOL (G3)",
-   "tipo_tarifa": "SMILES_CLUB",
-   "link": "https://www.smiles.com.br/mfe/emissao-passagem/?adults=1&cabin=ECONOMIC&children=0&departureDate=1795057200000&infants=0&isElegible=false&isFlexibleDateChecked=false&returnDate=&searchType=g3&segments=1&tripType=2&originAirport=MCZ&originCity=&originCountry=&originAirportIsAny=false&destinationAirport=SSA&destinCity=&destinCountry=&destinAirportIsAny=false&novo-resultado-voos=true"
-  },
-  {
-   "destino": "SSA",
-   "nome": "Salvador",
-   "regiao": "nordeste",
-   "data": "2026-11-26",
-   "milhas": 19100,
-   "cia": "GOL (G3)",
-   "tipo_tarifa": "SMILES_CLUB",
-   "link": "https://www.smiles.com.br/mfe/emissao-passagem/?adults=1&cabin=ECONOMIC&children=0&departureDate=1795662000000&infants=0&isElegible=false&isFlexibleDateChecked=false&returnDate=&searchType=g3&segments=1&tripType=2&originAirport=MCZ&originCity=&originCountry=&originAirportIsAny=false&destinationAirport=SSA&destinCity=&destinCountry=&destinAirportIsAny=false&novo-resultado-voos=true"
-  },
-  {
-   "destino": "SSA",
-   "nome": "Salvador",
-   "regiao": "nordeste",
-   "data": "2026-12-03",
-   "milhas": 19100,
-   "cia": "GOL (G3)",
-   "tipo_tarifa": "SMILES_CLUB",
-   "link": "https://www.smiles.com.br/mfe/emissao-passagem/?adults=1&cabin=ECONOMIC&children=0&departureDate=1796266800000&infants=0&isElegible=false&isFlexibleDateChecked=false&returnDate=&searchType=g3&segments=1&tripType=2&originAirport=MCZ&originCity=&originCountry=&originAirportIsAny=false&destinationAirport=SSA&destinCity=&destinCountry=&destinAirportIsAny=false&novo-resultado-voos=true"
-  },
-  {
-   "destino": "SSA",
-   "nome": "Salvador",
-   "regiao": "nordeste",
-   "data": "2026-12-10",
-   "milhas": 19100,
-   "cia": "GOL (G3)",
-   "tipo_tarifa": "SMILES_CLUB",
-   "link": "https://www.smiles.com.br/mfe/emissao-passagem/?adults=1&cabin=ECONOMIC&children=0&departureDate=1796871600000&infants=0&isElegible=false&isFlexibleDateChecked=false&returnDate=&searchType=g3&segments=1&tripType=2&originAirport=MCZ&originCity=&originCountry=&originAirportIsAny=false&destinationAirport=SSA&destinCity=&destinCountry=&destinAirportIsAny=false&novo-resultado-voos=true"
-  },
-  {
-   "destino": "SSA",
-   "nome": "Salvador",
-   "regiao": "nordeste",
-   "data": "2026-12-17",
-   "milhas": 19100,
-   "cia": "GOL (G3)",
-   "tipo_tarifa": "SMILES_CLUB",
-   "link": "https://www.smiles.com.br/mfe/emissao-passagem/?adults=1&cabin=ECONOMIC&children=0&departureDate=1797476400000&infants=0&isElegible=false&isFlexibleDateChecked=false&returnDate=&searchType=g3&segments=1&tripType=2&originAirport=MCZ&originCity=&originCountry=&originAirportIsAny=false&destinationAirport=SSA&destinCity=&destinCountry=&destinAirportIsAny=false&novo-resultado-voos=true"
+   "link": "https://www.smiles.com.br/mfe/emissao-passagem/?adults=1&cabin=ECONOMIC&children=0&departureDate=1793934000000&infants=0&isElegible=false&isFlexibleDateChecked=false&returnDate=&searchType=g3&segments=1&tripType=2&originAirport=MCZ&originCity=&originCountry=&originAirportIsAny=false&destinationAirport=GYN&destinCity=&destinCountry=&destinAirportIsAny=false&novo-resultado-voos=true"
   }
  ],
  "resultados": [
@@ -117,21 +127,243 @@
    "nome": "Salvador",
    "regiao": "nordeste",
    "limite_alerta": 10000,
-   "milhas": 19100,
+   "milhas": 11600,
    "detalhes": {
-    "data": "2026-10-15",
-    "milhas": 19100,
+    "data": "2026-08-14",
+    "alta": false,
+    "milhas": 11600,
     "tipo_tarifa": "SMILES_CLUB",
     "cia": "GOL (G3)",
     "paradas": 0,
     "horario": "21:30",
     "duracao_h": 1
    },
-   "variacao": 1700,
-   "link": "https://www.smiles.com.br/mfe/emissao-passagem/?adults=1&cabin=ECONOMIC&children=0&departureDate=1792033200000&infants=0&isElegible=false&isFlexibleDateChecked=false&returnDate=&searchType=g3&segments=1&tripType=2&originAirport=MCZ&originCity=&originCountry=&originAirportIsAny=false&destinationAirport=SSA&destinCity=&destinCountry=&destinAirportIsAny=false&novo-resultado-voos=true",
+   "variacao": -7500,
+   "link": "https://www.smiles.com.br/mfe/emissao-passagem/?adults=1&cabin=ECONOMIC&children=0&departureDate=1786676400000&infants=0&isElegible=false&isFlexibleDateChecked=false&returnDate=&searchType=g3&segments=1&tripType=2&originAirport=MCZ&originCity=&originCountry=&originAirportIsAny=false&destinationAirport=SSA&destinCity=&destinCountry=&destinAirportIsAny=false&novo-resultado-voos=true",
    "datas": [
     {
-     "data": "2026-10-15",
+     "data": "2026-08-11",
+     "alta": false,
+     "milhas": 87600,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "12:30",
+     "duracao_h": 1
+    },
+    {
+     "data": "2026-08-14",
+     "alta": false,
+     "milhas": 11600,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "21:30",
+     "duracao_h": 1
+    },
+    {
+     "data": "2026-08-17",
+     "alta": false,
+     "milhas": 28500,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "12:30",
+     "duracao_h": 1
+    },
+    {
+     "data": "2026-08-20",
+     "alta": false,
+     "milhas": 28500,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "12:30",
+     "duracao_h": 1
+    },
+    {
+     "data": "2026-08-23",
+     "alta": false,
+     "milhas": 28500,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "12:30",
+     "duracao_h": 1
+    },
+    {
+     "data": "2026-08-26",
+     "alta": false,
+     "milhas": 43000,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "12:30",
+     "duracao_h": 1
+    },
+    {
+     "data": "2026-09-01",
+     "alta": false,
+     "milhas": 43000,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "12:30",
+     "duracao_h": 1
+    },
+    {
+     "data": "2026-09-04",
+     "alta": false,
+     "milhas": 36600,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "12:30",
+     "duracao_h": 1
+    },
+    {
+     "data": "2026-09-07",
+     "alta": true,
+     "milhas": 61000,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "21:30",
+     "duracao_h": 1
+    },
+    {
+     "data": "2026-09-10",
+     "alta": false,
+     "milhas": 28500,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "21:30",
+     "duracao_h": 1
+    },
+    {
+     "data": "2026-09-13",
+     "alta": false,
+     "milhas": 28500,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "12:30",
+     "duracao_h": 1
+    },
+    {
+     "data": "2026-09-16",
+     "alta": false,
+     "milhas": 48200,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "12:30",
+     "duracao_h": 1
+    },
+    {
+     "data": "2026-09-19",
+     "alta": false,
+     "milhas": 23900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "12:30",
+     "duracao_h": 1
+    },
+    {
+     "data": "2026-09-22",
+     "alta": false,
+     "milhas": 35700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "12:30",
+     "duracao_h": 1
+    },
+    {
+     "data": "2026-09-25",
+     "alta": false,
+     "milhas": 23900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "12:30",
+     "duracao_h": 1
+    },
+    {
+     "data": "2026-09-28",
+     "alta": false,
+     "milhas": 23900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "21:30",
+     "duracao_h": 1
+    },
+    {
+     "data": "2026-10-01",
+     "alta": false,
+     "milhas": 23900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "12:30",
+     "duracao_h": 1
+    },
+    {
+     "data": "2026-10-04",
+     "alta": false,
+     "milhas": 23900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "12:30",
+     "duracao_h": 1
+    },
+    {
+     "data": "2026-10-07",
+     "alta": false,
+     "milhas": 23900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "21:30",
+     "duracao_h": 1
+    },
+    {
+     "data": "2026-10-10",
+     "alta": false,
+     "milhas": 36600,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "12:30",
+     "duracao_h": 1
+    },
+    {
+     "data": "2026-10-13",
+     "alta": true,
+     "milhas": 36600,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "21:30",
+     "duracao_h": 1
+    },
+    {
+     "data": "2026-10-16",
+     "alta": false,
+     "milhas": 19100,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "21:30",
+     "duracao_h": 1
+    },
+    {
+     "data": "2026-10-19",
+     "alta": false,
      "milhas": 19100,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
@@ -141,6 +373,7 @@
     },
     {
      "data": "2026-10-22",
+     "alta": false,
      "milhas": 19100,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
@@ -149,7 +382,8 @@
      "duracao_h": 1
     },
     {
-     "data": "2026-10-29",
+     "data": "2026-10-25",
+     "alta": false,
      "milhas": 19100,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
@@ -158,8 +392,49 @@
      "duracao_h": 1
     },
     {
-     "data": "2026-11-05",
+     "data": "2026-10-28",
+     "alta": false,
+     "milhas": 48200,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "21:30",
+     "duracao_h": 1
+    },
+    {
+     "data": "2026-10-31",
+     "alta": false,
+     "milhas": 23900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "12:30",
+     "duracao_h": 1
+    },
+    {
+     "data": "2026-11-03",
+     "alta": true,
      "milhas": 19100,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "21:30",
+     "duracao_h": 1
+    },
+    {
+     "data": "2026-11-06",
+     "alta": false,
+     "milhas": 19100,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "21:30",
+     "duracao_h": 1
+    },
+    {
+     "data": "2026-11-09",
+     "alta": false,
+     "milhas": 23900,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
      "paradas": 0,
@@ -168,6 +443,7 @@
     },
     {
      "data": "2026-11-12",
+     "alta": false,
      "milhas": 19100,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
@@ -176,7 +452,8 @@
      "duracao_h": 1
     },
     {
-     "data": "2026-11-19",
+     "data": "2026-11-15",
+     "alta": true,
      "milhas": 19100,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
@@ -185,7 +462,48 @@
      "duracao_h": 1
     },
     {
-     "data": "2026-11-26",
+     "data": "2026-11-18",
+     "alta": false,
+     "milhas": 19100,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "21:30",
+     "duracao_h": 1
+    },
+    {
+     "data": "2026-11-21",
+     "alta": true,
+     "milhas": 43000,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "12:30",
+     "duracao_h": 1
+    },
+    {
+     "data": "2026-11-24",
+     "alta": false,
+     "milhas": 48200,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "21:30",
+     "duracao_h": 1
+    },
+    {
+     "data": "2026-11-27",
+     "alta": false,
+     "milhas": 19100,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "21:30",
+     "duracao_h": 1
+    },
+    {
+     "data": "2026-11-30",
+     "alta": false,
      "milhas": 19100,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
@@ -195,6 +513,7 @@
     },
     {
      "data": "2026-12-03",
+     "alta": false,
      "milhas": 19100,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
@@ -203,7 +522,8 @@
      "duracao_h": 1
     },
     {
-     "data": "2026-12-10",
+     "data": "2026-12-06",
+     "alta": false,
      "milhas": 19100,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
@@ -212,7 +532,8 @@
      "duracao_h": 1
     },
     {
-     "data": "2026-12-17",
+     "data": "2026-12-09",
+     "alta": false,
      "milhas": 19100,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
@@ -221,26 +542,9 @@
      "duracao_h": 1
     },
     {
-     "data": "2026-12-24",
-     "milhas": 19100,
-     "tipo_tarifa": "SMILES_CLUB",
-     "cia": "GOL (G3)",
-     "paradas": 0,
-     "horario": "21:30",
-     "duracao_h": 1
-    },
-    {
-     "data": "2026-12-31",
-     "milhas": 19100,
-     "tipo_tarifa": "SMILES_CLUB",
-     "cia": "GOL (G3)",
-     "paradas": 0,
-     "horario": "21:30",
-     "duracao_h": 1
-    },
-    {
-     "data": "2027-01-07",
-     "milhas": 48200,
+     "data": "2026-12-12",
+     "alta": false,
+     "milhas": 23900,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
      "paradas": 0,
@@ -248,7 +552,8 @@
      "duracao_h": 1
     },
     {
-     "data": "2027-01-14",
+     "data": "2026-12-16",
+     "alta": true,
      "milhas": 19100,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
@@ -257,7 +562,8 @@
      "duracao_h": 1
     },
     {
-     "data": "2027-01-21",
+     "data": "2026-12-21",
+     "alta": true,
      "milhas": 19100,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
@@ -266,8 +572,79 @@
      "duracao_h": 1
     },
     {
-     "data": "2027-01-28",
+     "data": "2026-12-26",
+     "alta": true,
+     "milhas": 27400,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "12:30",
+     "duracao_h": 1
+    },
+    {
+     "data": "2026-12-31",
+     "alta": true,
+     "milhas": 19100,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "21:30",
+     "duracao_h": 1
+    },
+    {
+     "data": "2027-01-05",
+     "alta": true,
      "milhas": 48200,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "21:30",
+     "duracao_h": 1
+    },
+    {
+     "data": "2027-01-10",
+     "alta": true,
+     "milhas": 27400,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "12:30",
+     "duracao_h": 1
+    },
+    {
+     "data": "2027-01-15",
+     "alta": true,
+     "milhas": 19100,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "21:30",
+     "duracao_h": 1
+    },
+    {
+     "data": "2027-01-20",
+     "alta": true,
+     "milhas": 19100,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "21:30",
+     "duracao_h": 1
+    },
+    {
+     "data": "2027-01-25",
+     "alta": true,
+     "milhas": 19100,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "21:30",
+     "duracao_h": 1
+    },
+    {
+     "data": "2027-01-30",
+     "alta": true,
+     "milhas": 38600,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
      "paradas": 0,
@@ -276,6 +653,7 @@
     },
     {
      "data": "2027-02-04",
+     "alta": false,
      "milhas": 19100,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
@@ -284,7 +662,8 @@
      "duracao_h": 1
     },
     {
-     "data": "2027-02-11",
+     "data": "2027-02-09",
+     "alta": true,
      "milhas": 19100,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
@@ -293,7 +672,8 @@
      "duracao_h": 1
     },
     {
-     "data": "2027-02-18",
+     "data": "2027-02-14",
+     "alta": false,
      "milhas": 19100,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
@@ -302,7 +682,8 @@
      "duracao_h": 1
     },
     {
-     "data": "2027-02-25",
+     "data": "2027-02-19",
+     "alta": false,
      "milhas": 19100,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
@@ -311,16 +692,38 @@
      "duracao_h": 1
     },
     {
-     "data": "2027-03-04",
+     "data": "2027-02-24",
+     "alta": false,
      "milhas": 19100,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
      "paradas": 0,
      "horario": "21:30",
+     "duracao_h": 1
+    },
+    {
+     "data": "2027-03-01",
+     "alta": false,
+     "milhas": 19100,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "21:30",
+     "duracao_h": 1
+    },
+    {
+     "data": "2027-03-06",
+     "alta": false,
+     "milhas": 43000,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "12:30",
      "duracao_h": 1
     },
     {
      "data": "2027-03-11",
+     "alta": false,
      "milhas": 19100,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
@@ -329,7 +732,8 @@
      "duracao_h": 1
     },
     {
-     "data": "2027-03-18",
+     "data": "2027-03-16",
+     "alta": false,
      "milhas": 19100,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
@@ -338,7 +742,8 @@
      "duracao_h": 1
     },
     {
-     "data": "2027-03-25",
+     "data": "2027-03-21",
+     "alta": true,
      "milhas": 19100,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
@@ -347,7 +752,8 @@
      "duracao_h": 1
     },
     {
-     "data": "2027-04-01",
+     "data": "2027-03-29",
+     "alta": true,
      "milhas": 19100,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
@@ -356,7 +762,118 @@
      "duracao_h": 1
     },
     {
-     "data": "2027-04-08",
+     "data": "2027-04-04",
+     "alta": false,
+     "milhas": 19100,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "21:30",
+     "duracao_h": 1
+    },
+    {
+     "data": "2027-04-10",
+     "alta": false,
+     "milhas": 43000,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "12:30",
+     "duracao_h": 1
+    },
+    {
+     "data": "2027-04-16",
+     "alta": false,
+     "milhas": 19100,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "21:30",
+     "duracao_h": 1
+    },
+    {
+     "data": "2027-04-22",
+     "alta": true,
+     "milhas": 19100,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "21:30",
+     "duracao_h": 1
+    },
+    {
+     "data": "2027-04-28",
+     "alta": false,
+     "milhas": 19100,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "21:30",
+     "duracao_h": 1
+    },
+    {
+     "data": "2027-05-04",
+     "alta": false,
+     "milhas": 19100,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "21:30",
+     "duracao_h": 1
+    },
+    {
+     "data": "2027-05-10",
+     "alta": false,
+     "milhas": 19100,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "21:30",
+     "duracao_h": 1
+    },
+    {
+     "data": "2027-05-16",
+     "alta": false,
+     "milhas": 19100,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "21:30",
+     "duracao_h": 1
+    },
+    {
+     "data": "2027-05-22",
+     "alta": false,
+     "milhas": 23900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "12:30",
+     "duracao_h": 1
+    },
+    {
+     "data": "2027-05-28",
+     "alta": true,
+     "milhas": 19100,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "21:30",
+     "duracao_h": 1
+    },
+    {
+     "data": "2027-06-03",
+     "alta": false,
+     "milhas": 19100,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "21:30",
+     "duracao_h": 1
+    },
+    {
+     "data": "2027-06-09",
+     "alta": false,
      "milhas": 19100,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
@@ -367,13 +884,1486 @@
    ]
   },
   {
+   "destino": "GYN",
+   "nome": "Goiânia",
+   "regiao": "centro_oeste",
+   "limite_alerta": 12000,
+   "milhas": 16200,
+   "detalhes": {
+    "data": "2026-09-22",
+    "alta": false,
+    "milhas": 16200,
+    "tipo_tarifa": "SMILES_CLUB",
+    "cia": "GOL (G3)",
+    "paradas": 1,
+    "horario": "03:45",
+    "duracao_h": 5
+   },
+   "variacao": null,
+   "link": "https://www.smiles.com.br/mfe/emissao-passagem/?adults=1&cabin=ECONOMIC&children=0&departureDate=1790046000000&infants=0&isElegible=false&isFlexibleDateChecked=false&returnDate=&searchType=g3&segments=1&tripType=2&originAirport=MCZ&originCity=&originCountry=&originAirportIsAny=false&destinationAirport=GYN&destinCity=&destinCountry=&destinAirportIsAny=false&novo-resultado-voos=true",
+   "datas": [
+    {
+     "data": "2026-08-11",
+     "alta": false,
+     "milhas": 33200,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "03:45",
+     "duracao_h": 5
+    },
+    {
+     "data": "2026-08-14",
+     "alta": false,
+     "milhas": 54200,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "06:50",
+     "duracao_h": 8
+    },
+    {
+     "data": "2026-08-17",
+     "alta": false,
+     "milhas": 54900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "11:35",
+     "duracao_h": 5
+    },
+    {
+     "data": "2026-08-20",
+     "alta": false,
+     "milhas": 28600,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "03:45",
+     "duracao_h": 5
+    },
+    {
+     "data": "2026-08-23",
+     "alta": false,
+     "milhas": 28600,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "03:45",
+     "duracao_h": 5
+    },
+    {
+     "data": "2026-08-26",
+     "alta": false,
+     "milhas": 28600,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "03:45",
+     "duracao_h": 5
+    },
+    {
+     "data": "2026-08-29",
+     "alta": false,
+     "milhas": 54200,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "03:15",
+     "duracao_h": 5
+    },
+    {
+     "data": "2026-09-01",
+     "alta": false,
+     "milhas": 28600,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "03:45",
+     "duracao_h": 5
+    },
+    {
+     "data": "2026-09-04",
+     "alta": false,
+     "milhas": 69800,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "06:50",
+     "duracao_h": 8
+    },
+    {
+     "data": "2026-09-07",
+     "alta": true,
+     "milhas": 97100,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "03:45",
+     "duracao_h": 5
+    },
+    {
+     "data": "2026-09-10",
+     "alta": false,
+     "milhas": 56100,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "06:50",
+     "duracao_h": 8
+    },
+    {
+     "data": "2026-09-13",
+     "alta": false,
+     "milhas": 56100,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "05:10",
+     "duracao_h": 5
+    },
+    {
+     "data": "2026-09-16",
+     "alta": false,
+     "milhas": 53300,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "03:45",
+     "duracao_h": 5
+    },
+    {
+     "data": "2026-09-19",
+     "alta": false,
+     "milhas": 53300,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "04:20",
+     "duracao_h": 6
+    },
+    {
+     "data": "2026-09-22",
+     "alta": false,
+     "milhas": 16200,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "03:45",
+     "duracao_h": 5
+    },
+    {
+     "data": "2026-09-25",
+     "alta": false,
+     "milhas": 16200,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "03:45",
+     "duracao_h": 5
+    },
+    {
+     "data": "2026-09-28",
+     "alta": false,
+     "milhas": 53300,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "17:35",
+     "duracao_h": 6
+    },
+    {
+     "data": "2026-10-01",
+     "alta": false,
+     "milhas": 16200,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "03:45",
+     "duracao_h": 5
+    },
+    {
+     "data": "2026-10-04",
+     "alta": false,
+     "milhas": 16200,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "03:45",
+     "duracao_h": 5
+    },
+    {
+     "data": "2026-10-07",
+     "alta": false,
+     "milhas": 16200,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "03:45",
+     "duracao_h": 5
+    },
+    {
+     "data": "2026-10-10",
+     "alta": false,
+     "milhas": 53400,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "04:30",
+     "duracao_h": 6
+    },
+    {
+     "data": "2026-10-13",
+     "alta": true,
+     "milhas": 53400,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:45",
+     "duracao_h": 5
+    },
+    {
+     "data": "2026-10-16",
+     "alta": false,
+     "milhas": 16200,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "03:45",
+     "duracao_h": 5
+    },
+    {
+     "data": "2026-10-19",
+     "alta": false,
+     "milhas": 53400,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 2,
+     "horario": "21:30",
+     "duracao_h": 11
+    },
+    {
+     "data": "2026-10-22",
+     "alta": false,
+     "milhas": 16200,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "11:35",
+     "duracao_h": 7
+    },
+    {
+     "data": "2026-10-25",
+     "alta": false,
+     "milhas": 16200,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "03:45",
+     "duracao_h": 6
+    },
+    {
+     "data": "2026-10-28",
+     "alta": false,
+     "milhas": 53400,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "03:45",
+     "duracao_h": 6
+    },
+    {
+     "data": "2026-10-31",
+     "alta": false,
+     "milhas": 53400,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "04:30",
+     "duracao_h": 5
+    },
+    {
+     "data": "2026-11-03",
+     "alta": true,
+     "milhas": 53400,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "17:35",
+     "duracao_h": 6
+    },
+    {
+     "data": "2026-11-06",
+     "alta": false,
+     "milhas": 16200,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:40",
+     "duracao_h": 6
+    },
+    {
+     "data": "2026-11-09",
+     "alta": false,
+     "milhas": 53400,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:40",
+     "duracao_h": 6
+    },
+    {
+     "data": "2026-11-12",
+     "alta": false,
+     "milhas": 53400,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "06:50",
+     "duracao_h": 8
+    },
+    {
+     "data": "2026-11-15",
+     "alta": true,
+     "milhas": 60600,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "04:30",
+     "duracao_h": 5
+    },
+    {
+     "data": "2026-11-18",
+     "alta": false,
+     "milhas": 16200,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "03:45",
+     "duracao_h": 6
+    },
+    {
+     "data": "2026-11-21",
+     "alta": true,
+     "milhas": 53400,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 4
+    },
+    {
+     "data": "2026-11-24",
+     "alta": false,
+     "milhas": 53400,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 3,
+     "horario": "17:30",
+     "duracao_h": 16
+    },
+    {
+     "data": "2026-11-27",
+     "alta": false,
+     "milhas": 16200,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "03:45",
+     "duracao_h": 6
+    },
+    {
+     "data": "2026-11-30",
+     "alta": false,
+     "milhas": 60600,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 3,
+     "horario": "17:30",
+     "duracao_h": 16
+    },
+    {
+     "data": "2026-12-03",
+     "alta": false,
+     "milhas": 16200,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "11:55",
+     "duracao_h": 6
+    },
+    {
+     "data": "2026-12-06",
+     "alta": false,
+     "milhas": 16200,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "03:45",
+     "duracao_h": 6
+    },
+    {
+     "data": "2026-12-09",
+     "alta": false,
+     "milhas": 40900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "03:45",
+     "duracao_h": 6
+    },
+    {
+     "data": "2026-12-12",
+     "alta": false,
+     "milhas": 44000,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "04:55",
+     "duracao_h": 5
+    },
+    {
+     "data": "2026-12-16",
+     "alta": true,
+     "milhas": 61200,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "04:30",
+     "duracao_h": 6
+    },
+    {
+     "data": "2026-12-21",
+     "alta": true,
+     "milhas": 61200,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "04:30",
+     "duracao_h": 6
+    },
+    {
+     "data": "2026-12-26",
+     "alta": true,
+     "milhas": 58000,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "04:30",
+     "duracao_h": 5
+    },
+    {
+     "data": "2026-12-31",
+     "alta": true,
+     "milhas": 61200,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:40",
+     "duracao_h": 6
+    },
+    {
+     "data": "2027-01-05",
+     "alta": true,
+     "milhas": 61200,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "03:45",
+     "duracao_h": 6
+    },
+    {
+     "data": "2027-01-10",
+     "alta": true,
+     "milhas": 80400,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "04:30",
+     "duracao_h": 5
+    },
+    {
+     "data": "2027-01-15",
+     "alta": true,
+     "milhas": 80400,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "04:30",
+     "duracao_h": 6
+    },
+    {
+     "data": "2027-01-20",
+     "alta": true,
+     "milhas": 61200,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "06:50",
+     "duracao_h": 8
+    },
+    {
+     "data": "2027-01-25",
+     "alta": true,
+     "milhas": 61200,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 2,
+     "horario": "21:30",
+     "duracao_h": 12
+    },
+    {
+     "data": "2027-01-30",
+     "alta": true,
+     "milhas": 61200,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "04:30",
+     "duracao_h": 5
+    },
+    {
+     "data": "2027-02-09",
+     "alta": true,
+     "milhas": 46700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "03:45",
+     "duracao_h": 6
+    },
+    {
+     "data": "2027-02-14",
+     "alta": false,
+     "milhas": 44000,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 4
+    },
+    {
+     "data": "2027-02-19",
+     "alta": false,
+     "milhas": 16200,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 4
+    },
+    {
+     "data": "2027-02-24",
+     "alta": false,
+     "milhas": 16200,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "03:45",
+     "duracao_h": 6
+    },
+    {
+     "data": "2027-03-01",
+     "alta": false,
+     "milhas": 16200,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "03:45",
+     "duracao_h": 6
+    },
+    {
+     "data": "2027-03-06",
+     "alta": false,
+     "milhas": 16200,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "03:45",
+     "duracao_h": 6
+    },
+    {
+     "data": "2027-03-11",
+     "alta": false,
+     "milhas": 16200,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "03:45",
+     "duracao_h": 6
+    },
+    {
+     "data": "2027-03-16",
+     "alta": false,
+     "milhas": 16200,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "03:45",
+     "duracao_h": 6
+    },
+    {
+     "data": "2027-03-21",
+     "alta": true,
+     "milhas": 16200,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "03:45",
+     "duracao_h": 6
+    },
+    {
+     "data": "2027-03-29",
+     "alta": true,
+     "milhas": 16200,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "03:45",
+     "duracao_h": 5
+    },
+    {
+     "data": "2027-04-04",
+     "alta": false,
+     "milhas": 16200,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "03:45",
+     "duracao_h": 5
+    },
+    {
+     "data": "2027-04-10",
+     "alta": false,
+     "milhas": 16200,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "03:45",
+     "duracao_h": 5
+    },
+    {
+     "data": "2027-04-16",
+     "alta": false,
+     "milhas": 16200,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "03:45",
+     "duracao_h": 5
+    },
+    {
+     "data": "2027-04-22",
+     "alta": true,
+     "milhas": 16200,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "03:45",
+     "duracao_h": 5
+    },
+    {
+     "data": "2027-04-28",
+     "alta": false,
+     "milhas": 16200,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 4
+    },
+    {
+     "data": "2027-05-04",
+     "alta": false,
+     "milhas": 16200,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "03:45",
+     "duracao_h": 5
+    },
+    {
+     "data": "2027-05-10",
+     "alta": false,
+     "milhas": 16200,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "03:45",
+     "duracao_h": 5
+    },
+    {
+     "data": "2027-05-16",
+     "alta": false,
+     "milhas": 16200,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 4
+    },
+    {
+     "data": "2027-05-22",
+     "alta": false,
+     "milhas": 16200,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 4
+    },
+    {
+     "data": "2027-05-28",
+     "alta": true,
+     "milhas": 16200,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 4
+    },
+    {
+     "data": "2027-06-03",
+     "alta": false,
+     "milhas": 16200,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 4
+    },
+    {
+     "data": "2027-06-09",
+     "alta": false,
+     "milhas": 16200,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 4
+    }
+   ]
+  },
+  {
+   "destino": "BSB",
+   "nome": "Brasília",
+   "regiao": "centro_oeste",
+   "limite_alerta": 12000,
+   "milhas": 23900,
+   "detalhes": {
+    "data": "2026-10-31",
+    "alta": false,
+    "milhas": 23900,
+    "tipo_tarifa": "SMILES_CLUB",
+    "cia": "GOL (G3)",
+    "paradas": 0,
+    "horario": "04:30",
+    "duracao_h": 2
+   },
+   "variacao": null,
+   "link": "https://www.smiles.com.br/mfe/emissao-passagem/?adults=1&cabin=ECONOMIC&children=0&departureDate=1793415600000&infants=0&isElegible=false&isFlexibleDateChecked=false&returnDate=&searchType=g3&segments=1&tripType=2&originAirport=MCZ&originCity=&originCountry=&originAirportIsAny=false&destinationAirport=BSB&destinCity=&destinCountry=&destinAirportIsAny=false&novo-resultado-voos=true",
+   "datas": [
+    {
+     "data": "2026-08-11",
+     "alta": false,
+     "milhas": 53700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "04:30",
+     "duracao_h": 2
+    },
+    {
+     "data": "2026-08-14",
+     "alta": false,
+     "milhas": 37500,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "21:30",
+     "duracao_h": 4
+    },
+    {
+     "data": "2026-08-17",
+     "alta": false,
+     "milhas": 53700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "04:30",
+     "duracao_h": 2
+    },
+    {
+     "data": "2026-08-20",
+     "alta": false,
+     "milhas": 27900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "04:30",
+     "duracao_h": 2
+    },
+    {
+     "data": "2026-08-23",
+     "alta": false,
+     "milhas": 53700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "03:45",
+     "duracao_h": 10
+    },
+    {
+     "data": "2026-08-26",
+     "alta": false,
+     "milhas": 27900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "03:45",
+     "duracao_h": 10
+    },
+    {
+     "data": "2026-08-29",
+     "alta": false,
+     "milhas": 53700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "04:30",
+     "duracao_h": 2
+    },
+    {
+     "data": "2026-09-01",
+     "alta": false,
+     "milhas": 27900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "03:45",
+     "duracao_h": 6
+    },
+    {
+     "data": "2026-09-04",
+     "alta": false,
+     "milhas": 63500,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "17:00",
+     "duracao_h": 2
+    },
+    {
+     "data": "2026-09-07",
+     "alta": true,
+     "milhas": 72800,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "04:30",
+     "duracao_h": 2
+    },
+    {
+     "data": "2026-09-10",
+     "alta": false,
+     "milhas": 27900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "04:30",
+     "duracao_h": 2
+    },
+    {
+     "data": "2026-09-13",
+     "alta": false,
+     "milhas": 63500,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "17:05",
+     "duracao_h": 2
+    },
+    {
+     "data": "2026-09-16",
+     "alta": false,
+     "milhas": 46400,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "03:45",
+     "duracao_h": 10
+    },
+    {
+     "data": "2026-09-19",
+     "alta": false,
+     "milhas": 27900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "03:45",
+     "duracao_h": 6
+    },
+    {
+     "data": "2026-09-22",
+     "alta": false,
+     "milhas": 27900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "03:45",
+     "duracao_h": 6
+    },
+    {
+     "data": "2026-09-25",
+     "alta": false,
+     "milhas": 27900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "03:45",
+     "duracao_h": 10
+    },
+    {
+     "data": "2026-09-28",
+     "alta": false,
+     "milhas": 52100,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "06:50",
+     "duracao_h": 6
+    },
+    {
+     "data": "2026-10-01",
+     "alta": false,
+     "milhas": 27900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "04:30",
+     "duracao_h": 2
+    },
+    {
+     "data": "2026-10-04",
+     "alta": false,
+     "milhas": 27900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "04:30",
+     "duracao_h": 2
+    },
+    {
+     "data": "2026-10-07",
+     "alta": false,
+     "milhas": 27900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "04:30",
+     "duracao_h": 2
+    },
+    {
+     "data": "2026-10-10",
+     "alta": false,
+     "milhas": 27900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "04:30",
+     "duracao_h": 2
+    },
+    {
+     "data": "2026-10-13",
+     "alta": true,
+     "milhas": 27900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "04:30",
+     "duracao_h": 2
+    },
+    {
+     "data": "2026-10-16",
+     "alta": false,
+     "milhas": 27900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "03:45",
+     "duracao_h": 10
+    },
+    {
+     "data": "2026-10-19",
+     "alta": false,
+     "milhas": 46400,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "03:45",
+     "duracao_h": 10
+    },
+    {
+     "data": "2026-10-22",
+     "alta": false,
+     "milhas": 27900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "03:45",
+     "duracao_h": 6
+    },
+    {
+     "data": "2026-10-25",
+     "alta": false,
+     "milhas": 33300,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "21:30",
+     "duracao_h": 10
+    },
+    {
+     "data": "2026-10-28",
+     "alta": false,
+     "milhas": 46400,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "03:45",
+     "duracao_h": 10
+    },
+    {
+     "data": "2026-10-31",
+     "alta": false,
+     "milhas": 23900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "04:30",
+     "duracao_h": 2
+    },
+    {
+     "data": "2026-11-03",
+     "alta": true,
+     "milhas": 33300,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "21:30",
+     "duracao_h": 10
+    },
+    {
+     "data": "2026-11-06",
+     "alta": false,
+     "milhas": 23900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "04:30",
+     "duracao_h": 2
+    },
+    {
+     "data": "2026-11-09",
+     "alta": false,
+     "milhas": 33300,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "21:30",
+     "duracao_h": 10
+    },
+    {
+     "data": "2026-11-12",
+     "alta": false,
+     "milhas": 27900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 2,
+     "horario": "05:10",
+     "duracao_h": 9
+    },
+    {
+     "data": "2026-11-15",
+     "alta": true,
+     "milhas": 52100,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "04:30",
+     "duracao_h": 2
+    },
+    {
+     "data": "2026-11-18",
+     "alta": false,
+     "milhas": 27900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "03:45",
+     "duracao_h": 10
+    },
+    {
+     "data": "2026-11-21",
+     "alta": true,
+     "milhas": 43400,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "04:30",
+     "duracao_h": 2
+    },
+    {
+     "data": "2026-11-24",
+     "alta": false,
+     "milhas": 46400,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "03:45",
+     "duracao_h": 7
+    },
+    {
+     "data": "2026-11-27",
+     "alta": false,
+     "milhas": 27900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "04:30",
+     "duracao_h": 2
+    },
+    {
+     "data": "2026-11-30",
+     "alta": false,
+     "milhas": 46400,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "03:45",
+     "duracao_h": 10
+    },
+    {
+     "data": "2026-12-03",
+     "alta": false,
+     "milhas": 33300,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "11:55",
+     "duracao_h": 8
+    },
+    {
+     "data": "2026-12-06",
+     "alta": false,
+     "milhas": 36600,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "21:30",
+     "duracao_h": 10
+    },
+    {
+     "data": "2026-12-09",
+     "alta": false,
+     "milhas": 33300,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "17:30",
+     "duracao_h": 6
+    },
+    {
+     "data": "2026-12-12",
+     "alta": false,
+     "milhas": 36600,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "04:55",
+     "duracao_h": 5
+    },
+    {
+     "data": "2026-12-16",
+     "alta": true,
+     "milhas": 38700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "21:30",
+     "duracao_h": 10
+    },
+    {
+     "data": "2026-12-21",
+     "alta": true,
+     "milhas": 38700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "21:30",
+     "duracao_h": 10
+    },
+    {
+     "data": "2026-12-26",
+     "alta": true,
+     "milhas": 43400,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "04:30",
+     "duracao_h": 2
+    },
+    {
+     "data": "2026-12-31",
+     "alta": true,
+     "milhas": 27900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "03:45",
+     "duracao_h": 7
+    },
+    {
+     "data": "2027-01-05",
+     "alta": true,
+     "milhas": 53700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "03:45",
+     "duracao_h": 7
+    },
+    {
+     "data": "2027-01-10",
+     "alta": true,
+     "milhas": 53700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "04:30",
+     "duracao_h": 2
+    },
+    {
+     "data": "2027-01-15",
+     "alta": true,
+     "milhas": 53700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "04:30",
+     "duracao_h": 2
+    },
+    {
+     "data": "2027-01-20",
+     "alta": true,
+     "milhas": 53700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "04:30",
+     "duracao_h": 2
+    },
+    {
+     "data": "2027-01-25",
+     "alta": true,
+     "milhas": 53700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "04:30",
+     "duracao_h": 2
+    },
+    {
+     "data": "2027-01-30",
+     "alta": true,
+     "milhas": 53700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "04:30",
+     "duracao_h": 2
+    },
+    {
+     "data": "2027-02-04",
+     "alta": false,
+     "milhas": 38700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "21:30",
+     "duracao_h": 10
+    },
+    {
+     "data": "2027-02-09",
+     "alta": true,
+     "milhas": 81600,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 5
+    },
+    {
+     "data": "2027-02-14",
+     "alta": false,
+     "milhas": 30400,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "04:30",
+     "duracao_h": 2
+    },
+    {
+     "data": "2027-02-19",
+     "alta": false,
+     "milhas": 23900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "04:30",
+     "duracao_h": 2
+    },
+    {
+     "data": "2027-02-24",
+     "alta": false,
+     "milhas": 23900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "04:30",
+     "duracao_h": 2
+    },
+    {
+     "data": "2027-03-01",
+     "alta": false,
+     "milhas": 23900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "04:30",
+     "duracao_h": 2
+    },
+    {
+     "data": "2027-03-06",
+     "alta": false,
+     "milhas": 23900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "04:30",
+     "duracao_h": 2
+    },
+    {
+     "data": "2027-03-11",
+     "alta": false,
+     "milhas": 23900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "04:30",
+     "duracao_h": 2
+    },
+    {
+     "data": "2027-03-16",
+     "alta": false,
+     "milhas": 23900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "04:30",
+     "duracao_h": 2
+    },
+    {
+     "data": "2027-03-21",
+     "alta": true,
+     "milhas": 33300,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 5
+    },
+    {
+     "data": "2027-03-29",
+     "alta": true,
+     "milhas": 23900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "04:30",
+     "duracao_h": 2
+    },
+    {
+     "data": "2027-04-04",
+     "alta": false,
+     "milhas": 23900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "04:30",
+     "duracao_h": 2
+    },
+    {
+     "data": "2027-04-10",
+     "alta": false,
+     "milhas": 23900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "04:30",
+     "duracao_h": 2
+    },
+    {
+     "data": "2027-04-16",
+     "alta": false,
+     "milhas": 23900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "04:30",
+     "duracao_h": 2
+    },
+    {
+     "data": "2027-05-28",
+     "alta": true,
+     "milhas": 27900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "04:30",
+     "duracao_h": 2
+    },
+    {
+     "data": "2027-06-03",
+     "alta": false,
+     "milhas": 36600,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 5
+    },
+    {
+     "data": "2027-06-09",
+     "alta": false,
+     "milhas": 27900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 0,
+     "horario": "04:30",
+     "duracao_h": 2
+    }
+   ]
+  },
+  {
    "destino": "REC",
    "nome": "Recife",
    "regiao": "nordeste",
    "limite_alerta": 10000,
    "milhas": 24700,
    "detalhes": {
-    "data": "2026-11-12",
+    "data": "2026-11-06",
+    "alta": false,
     "milhas": 24700,
     "tipo_tarifa": "SMILES_CLUB",
     "cia": "GOL (G3)",
@@ -382,10 +2372,231 @@
     "duracao_h": 3
    },
    "variacao": 0,
-   "link": "https://www.smiles.com.br/mfe/emissao-passagem/?adults=1&cabin=ECONOMIC&children=0&departureDate=1794452400000&infants=0&isElegible=false&isFlexibleDateChecked=false&returnDate=&searchType=g3&segments=1&tripType=2&originAirport=MCZ&originCity=&originCountry=&originAirportIsAny=false&destinationAirport=REC&destinCity=&destinCountry=&destinAirportIsAny=false&novo-resultado-voos=true",
+   "link": "https://www.smiles.com.br/mfe/emissao-passagem/?adults=1&cabin=ECONOMIC&children=0&departureDate=1793934000000&infants=0&isElegible=false&isFlexibleDateChecked=false&returnDate=&searchType=g3&segments=1&tripType=2&originAirport=MCZ&originCity=&originCountry=&originAirportIsAny=false&destinationAirport=REC&destinCity=&destinCountry=&destinAirportIsAny=false&novo-resultado-voos=true",
    "datas": [
     {
-     "data": "2026-10-15",
+     "data": "2026-08-11",
+     "alta": false,
+     "milhas": 90900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-08-14",
+     "alta": false,
+     "milhas": 31000,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "21:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-08-17",
+     "alta": false,
+     "milhas": 75100,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-08-20",
+     "alta": false,
+     "milhas": 29400,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "21:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-08-23",
+     "alta": false,
+     "milhas": 61300,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "21:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-08-26",
+     "alta": false,
+     "milhas": 75100,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-09-01",
+     "alta": false,
+     "milhas": 52500,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-09-04",
+     "alta": false,
+     "milhas": 52500,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-09-07",
+     "alta": true,
+     "milhas": 75100,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-09-10",
+     "alta": false,
+     "milhas": 75100,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-09-13",
+     "alta": false,
+     "milhas": 75100,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-09-16",
+     "alta": false,
+     "milhas": 75100,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-09-19",
+     "alta": false,
+     "milhas": 75100,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-09-22",
+     "alta": false,
+     "milhas": 75100,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-09-25",
+     "alta": false,
+     "milhas": 75100,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-09-28",
+     "alta": false,
+     "milhas": 75100,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-10-01",
+     "alta": false,
+     "milhas": 50000,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "21:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-10-04",
+     "alta": false,
+     "milhas": 50000,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "21:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-10-07",
+     "alta": false,
+     "milhas": 50000,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "21:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-10-10",
+     "alta": false,
+     "milhas": 50000,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-10-13",
+     "alta": true,
+     "milhas": 50000,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "21:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-10-16",
+     "alta": false,
+     "milhas": 47000,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-10-19",
+     "alta": false,
      "milhas": 47000,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
@@ -395,6 +2606,7 @@
     },
     {
      "data": "2026-10-22",
+     "alta": false,
      "milhas": 47000,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
@@ -403,7 +2615,8 @@
      "duracao_h": 3
     },
     {
-     "data": "2026-10-29",
+     "data": "2026-10-25",
+     "alta": false,
      "milhas": 47000,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
@@ -412,7 +2625,48 @@
      "duracao_h": 3
     },
     {
-     "data": "2026-11-05",
+     "data": "2026-10-28",
+     "alta": false,
+     "milhas": 75100,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-10-31",
+     "alta": false,
+     "milhas": 61300,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-11-03",
+     "alta": true,
+     "milhas": 47000,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "21:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-11-06",
+     "alta": false,
+     "milhas": 24700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "21:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-11-09",
+     "alta": false,
      "milhas": 47000,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
@@ -422,6 +2676,7 @@
     },
     {
      "data": "2026-11-12",
+     "alta": false,
      "milhas": 24700,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
@@ -430,7 +2685,8 @@
      "duracao_h": 3
     },
     {
-     "data": "2026-11-19",
+     "data": "2026-11-15",
+     "alta": true,
      "milhas": 61300,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
@@ -439,16 +2695,58 @@
      "duracao_h": 3
     },
     {
-     "data": "2026-11-26",
+     "data": "2026-11-18",
+     "alta": false,
+     "milhas": 61300,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-11-21",
+     "alta": true,
+     "milhas": 47000,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-11-24",
+     "alta": false,
+     "milhas": 61300,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-11-27",
+     "alta": false,
      "milhas": 24700,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
      "paradas": 1,
      "horario": "21:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-11-30",
+     "alta": false,
+     "milhas": 61300,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
      "duracao_h": 3
     },
     {
      "data": "2026-12-03",
+     "alta": false,
      "milhas": 24700,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
@@ -457,16 +2755,8 @@
      "duracao_h": 3
     },
     {
-     "data": "2026-12-10",
-     "milhas": 24700,
-     "tipo_tarifa": "SMILES_CLUB",
-     "cia": "GOL (G3)",
-     "paradas": 1,
-     "horario": "21:30",
-     "duracao_h": 3
-    },
-    {
-     "data": "2026-12-17",
+     "data": "2026-12-06",
+     "alta": false,
      "milhas": 47000,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
@@ -475,8 +2765,49 @@
      "duracao_h": 3
     },
     {
-     "data": "2026-12-24",
-     "milhas": 38600,
+     "data": "2026-12-09",
+     "alta": false,
+     "milhas": 24700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-12-12",
+     "alta": false,
+     "milhas": 61300,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-12-16",
+     "alta": true,
+     "milhas": 47000,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "21:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-12-21",
+     "alta": true,
+     "milhas": 47000,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "21:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-12-26",
+     "alta": true,
+     "milhas": 61300,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
      "paradas": 1,
@@ -485,6 +2816,7 @@
     },
     {
      "data": "2026-12-31",
+     "alta": true,
      "milhas": 47000,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
@@ -493,7 +2825,18 @@
      "duracao_h": 3
     },
     {
-     "data": "2027-01-07",
+     "data": "2027-01-05",
+     "alta": true,
+     "milhas": 61300,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "21:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2027-01-10",
+     "alta": true,
      "milhas": 61300,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
@@ -502,7 +2845,8 @@
      "duracao_h": 3
     },
     {
-     "data": "2027-01-14",
+     "data": "2027-01-15",
+     "alta": true,
      "milhas": 47000,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
@@ -511,17 +2855,29 @@
      "duracao_h": 3
     },
     {
-     "data": "2027-01-21",
+     "data": "2027-01-20",
+     "alta": true,
      "milhas": 47000,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
      "paradas": 1,
-     "horario": "12:30",
+     "horario": "21:30",
      "duracao_h": 3
     },
     {
-     "data": "2027-01-28",
-     "milhas": 50000,
+     "data": "2027-01-25",
+     "alta": true,
+     "milhas": 47000,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "21:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2027-01-30",
+     "alta": true,
+     "milhas": 61300,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
      "paradas": 1,
@@ -530,6 +2886,7 @@
     },
     {
      "data": "2027-02-04",
+     "alta": false,
      "milhas": 47000,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
@@ -538,7 +2895,8 @@
      "duracao_h": 3
     },
     {
-     "data": "2027-02-11",
+     "data": "2027-02-09",
+     "alta": true,
      "milhas": 61300,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
@@ -547,7 +2905,18 @@
      "duracao_h": 3
     },
     {
-     "data": "2027-02-18",
+     "data": "2027-02-14",
+     "alta": false,
+     "milhas": 50000,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "21:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2027-02-19",
+     "alta": false,
      "milhas": 24700,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
@@ -556,8 +2925,19 @@
      "duracao_h": 3
     },
     {
-     "data": "2027-02-25",
+     "data": "2027-02-24",
+     "alta": false,
      "milhas": 24700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "21:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2027-03-01",
+     "alta": false,
+     "milhas": 61300,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
      "paradas": 1,
@@ -565,7 +2945,8 @@
      "duracao_h": 3
     },
     {
-     "data": "2027-03-04",
+     "data": "2027-03-06",
+     "alta": false,
      "milhas": 61300,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
@@ -575,6 +2956,7 @@
     },
     {
      "data": "2027-03-11",
+     "alta": false,
      "milhas": 24700,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
@@ -583,7 +2965,48 @@
      "duracao_h": 3
     },
     {
-     "data": "2027-03-18",
+     "data": "2027-03-16",
+     "alta": false,
+     "milhas": 24700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "21:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2027-03-21",
+     "alta": true,
+     "milhas": 24700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2027-03-29",
+     "alta": true,
+     "milhas": 24700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "21:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2027-04-04",
+     "alta": false,
+     "milhas": 24700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "21:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2027-04-10",
+     "alta": false,
      "milhas": 61300,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
@@ -592,30 +3015,794 @@
      "duracao_h": 3
     },
     {
-     "data": "2027-03-25",
+     "data": "2027-04-16",
+     "alta": false,
+     "milhas": 24700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "21:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2027-04-22",
+     "alta": true,
+     "milhas": 61300,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2027-06-03",
+     "alta": false,
+     "milhas": 24700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2027-06-09",
+     "alta": false,
      "milhas": 47000,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
      "paradas": 1,
-     "horario": "21:30",
+     "horario": "12:30",
+     "duracao_h": 3
+    }
+   ]
+  },
+  {
+   "destino": "AJU",
+   "nome": "Aracaju",
+   "regiao": "nordeste",
+   "limite_alerta": 10000,
+   "milhas": 24700,
+   "detalhes": {
+    "data": "2027-06-03",
+    "alta": false,
+    "milhas": 24700,
+    "tipo_tarifa": "SMILES_CLUB",
+    "cia": "GOL (G3)",
+    "paradas": 1,
+    "horario": "12:30",
+    "duracao_h": 3
+   },
+   "variacao": null,
+   "link": "https://www.smiles.com.br/mfe/emissao-passagem/?adults=1&cabin=ECONOMIC&children=0&departureDate=1811991600000&infants=0&isElegible=false&isFlexibleDateChecked=false&returnDate=&searchType=g3&segments=1&tripType=2&originAirport=MCZ&originCity=&originCountry=&originAirportIsAny=false&destinationAirport=AJU&destinCity=&destinCountry=&destinAirportIsAny=false&novo-resultado-voos=true",
+   "datas": [
+    {
+     "data": "2026-08-11",
+     "alta": false,
+     "milhas": 110800,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
      "duracao_h": 3
     },
     {
-     "data": "2027-04-01",
+     "data": "2026-08-14",
+     "alta": false,
+     "milhas": 96100,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-08-17",
+     "alta": false,
+     "milhas": 96100,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-08-20",
+     "alta": false,
+     "milhas": 38600,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-08-23",
+     "alta": false,
+     "milhas": 96100,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-08-26",
+     "alta": false,
+     "milhas": 96100,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-09-01",
+     "alta": false,
+     "milhas": 86700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-09-04",
+     "alta": false,
+     "milhas": 86700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-09-07",
+     "alta": true,
+     "milhas": 96100,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-09-10",
+     "alta": false,
+     "milhas": 96100,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-09-13",
+     "alta": false,
+     "milhas": 86700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-09-16",
+     "alta": false,
+     "milhas": 96100,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-09-19",
+     "alta": false,
+     "milhas": 96100,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-09-22",
+     "alta": false,
+     "milhas": 96100,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-09-25",
+     "alta": false,
+     "milhas": 86700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-09-28",
+     "alta": false,
+     "milhas": 96100,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-10-01",
+     "alta": false,
+     "milhas": 96100,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-10-04",
+     "alta": false,
+     "milhas": 96100,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-10-07",
+     "alta": false,
+     "milhas": 96100,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-10-10",
+     "alta": false,
+     "milhas": 86700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-10-16",
+     "alta": false,
+     "milhas": 86700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-10-19",
+     "alta": false,
+     "milhas": 96100,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-10-22",
+     "alta": false,
+     "milhas": 86700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-10-25",
+     "alta": false,
+     "milhas": 96100,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-10-28",
+     "alta": false,
+     "milhas": 96100,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-10-31",
+     "alta": false,
+     "milhas": 86700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-11-03",
+     "alta": true,
+     "milhas": 96100,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-11-06",
+     "alta": false,
+     "milhas": 86700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-11-09",
+     "alta": false,
+     "milhas": 86700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-11-12",
+     "alta": false,
+     "milhas": 96100,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-11-15",
+     "alta": true,
+     "milhas": 86700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-11-18",
+     "alta": false,
+     "milhas": 86700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-11-21",
+     "alta": true,
+     "milhas": 86700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-11-24",
+     "alta": false,
+     "milhas": 86700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-11-27",
+     "alta": false,
+     "milhas": 86700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-11-30",
+     "alta": false,
+     "milhas": 86700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-12-03",
+     "alta": false,
+     "milhas": 86700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-12-06",
+     "alta": false,
+     "milhas": 86700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-12-09",
+     "alta": false,
+     "milhas": 38100,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-12-12",
+     "alta": false,
+     "milhas": 96500,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-12-16",
+     "alta": true,
+     "milhas": 96500,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-12-21",
+     "alta": true,
+     "milhas": 96500,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-12-26",
+     "alta": true,
+     "milhas": 96500,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-12-31",
+     "alta": true,
+     "milhas": 96500,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2027-01-05",
+     "alta": true,
+     "milhas": 110600,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2027-01-10",
+     "alta": true,
+     "milhas": 96500,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2027-01-15",
+     "alta": true,
+     "milhas": 96500,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2027-01-20",
+     "alta": true,
+     "milhas": 96500,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2027-01-25",
+     "alta": true,
+     "milhas": 96500,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2027-01-30",
+     "alta": true,
+     "milhas": 96500,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2027-02-04",
+     "alta": false,
+     "milhas": 96500,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2027-02-09",
+     "alta": true,
+     "milhas": 96500,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2027-02-14",
+     "alta": false,
+     "milhas": 41500,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2027-02-19",
+     "alta": false,
+     "milhas": 86700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2027-02-24",
+     "alta": false,
+     "milhas": 86700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2027-03-01",
+     "alta": false,
+     "milhas": 86700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2027-03-06",
+     "alta": false,
+     "milhas": 86700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2027-03-11",
+     "alta": false,
+     "milhas": 86700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2027-03-16",
+     "alta": false,
+     "milhas": 86700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2027-03-21",
+     "alta": true,
+     "milhas": 38100,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2027-03-29",
+     "alta": true,
+     "milhas": 86700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2027-04-04",
+     "alta": false,
+     "milhas": 86700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2027-04-10",
+     "alta": false,
+     "milhas": 86700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2027-04-16",
+     "alta": false,
+     "milhas": 38100,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2027-04-22",
+     "alta": true,
+     "milhas": 86700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2027-04-28",
+     "alta": false,
+     "milhas": 86700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2027-05-04",
+     "alta": false,
+     "milhas": 38100,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2027-05-10",
+     "alta": false,
+     "milhas": 38100,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2027-05-16",
+     "alta": false,
+     "milhas": 38100,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2027-05-22",
+     "alta": false,
+     "milhas": 38100,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2027-05-28",
+     "alta": true,
+     "milhas": 86700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2027-06-03",
+     "alta": false,
      "milhas": 24700,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
      "paradas": 1,
-     "horario": "21:30",
+     "horario": "12:30",
      "duracao_h": 3
     },
     {
-     "data": "2027-04-08",
-     "milhas": 24700,
+     "data": "2027-06-09",
+     "alta": false,
+     "milhas": 86700,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
      "paradas": 1,
-     "horario": "21:30",
+     "horario": "12:30",
      "duracao_h": 3
     }
    ]
@@ -627,7 +3814,8 @@
    "limite_alerta": 10000,
    "milhas": 27700,
    "detalhes": {
-    "data": "2026-10-15",
+    "data": "2026-10-01",
+    "alta": false,
     "milhas": 27700,
     "tipo_tarifa": "SMILES_CLUB",
     "cia": "GOL (G3)",
@@ -635,11 +3823,232 @@
     "horario": "21:30",
     "duracao_h": 4
    },
-   "variacao": 500,
-   "link": "https://www.smiles.com.br/mfe/emissao-passagem/?adults=1&cabin=ECONOMIC&children=0&departureDate=1792033200000&infants=0&isElegible=false&isFlexibleDateChecked=false&returnDate=&searchType=g3&segments=1&tripType=2&originAirport=MCZ&originCity=&originCountry=&originAirportIsAny=false&destinationAirport=FOR&destinCity=&destinCountry=&destinAirportIsAny=false&novo-resultado-voos=true",
+   "variacao": 0,
+   "link": "https://www.smiles.com.br/mfe/emissao-passagem/?adults=1&cabin=ECONOMIC&children=0&departureDate=1790823600000&infants=0&isElegible=false&isFlexibleDateChecked=false&returnDate=&searchType=g3&segments=1&tripType=2&originAirport=MCZ&originCity=&originCountry=&originAirportIsAny=false&destinationAirport=FOR&destinCity=&destinCountry=&destinAirportIsAny=false&novo-resultado-voos=true",
    "datas": [
     {
-     "data": "2026-10-15",
+     "data": "2026-08-11",
+     "alta": false,
+     "milhas": 143000,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-08-14",
+     "alta": false,
+     "milhas": 125400,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-08-17",
+     "alta": false,
+     "milhas": 125400,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-08-20",
+     "alta": false,
+     "milhas": 125400,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-08-23",
+     "alta": false,
+     "milhas": 46900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "21:30",
+     "duracao_h": 4
+    },
+    {
+     "data": "2026-08-26",
+     "alta": false,
+     "milhas": 125400,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-09-01",
+     "alta": false,
+     "milhas": 78800,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-09-04",
+     "alta": false,
+     "milhas": 78800,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "21:30",
+     "duracao_h": 4
+    },
+    {
+     "data": "2026-09-07",
+     "alta": true,
+     "milhas": 125400,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-09-10",
+     "alta": false,
+     "milhas": 31900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "21:30",
+     "duracao_h": 4
+    },
+    {
+     "data": "2026-09-13",
+     "alta": false,
+     "milhas": 46900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-09-16",
+     "alta": false,
+     "milhas": 125400,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-09-19",
+     "alta": false,
+     "milhas": 125400,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-09-22",
+     "alta": false,
+     "milhas": 125400,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-09-25",
+     "alta": false,
+     "milhas": 31900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "21:30",
+     "duracao_h": 4
+    },
+    {
+     "data": "2026-09-28",
+     "alta": false,
+     "milhas": 125400,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-10-01",
+     "alta": false,
+     "milhas": 27700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "21:30",
+     "duracao_h": 4
+    },
+    {
+     "data": "2026-10-04",
+     "alta": false,
+     "milhas": 32400,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "21:30",
+     "duracao_h": 4
+    },
+    {
+     "data": "2026-10-07",
+     "alta": false,
+     "milhas": 27700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "21:30",
+     "duracao_h": 4
+    },
+    {
+     "data": "2026-10-10",
+     "alta": false,
+     "milhas": 125400,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-10-13",
+     "alta": true,
+     "milhas": 27700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "21:30",
+     "duracao_h": 4
+    },
+    {
+     "data": "2026-10-16",
+     "alta": false,
+     "milhas": 30400,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-10-19",
+     "alta": false,
      "milhas": 27700,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
@@ -649,6 +4058,7 @@
     },
     {
      "data": "2026-10-22",
+     "alta": false,
      "milhas": 27700,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
@@ -657,8 +4067,9 @@
      "duracao_h": 3
     },
     {
-     "data": "2026-10-29",
-     "milhas": 27700,
+     "data": "2026-10-25",
+     "alta": false,
+     "milhas": 30400,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
      "paradas": 1,
@@ -666,7 +4077,28 @@
      "duracao_h": 4
     },
     {
-     "data": "2026-11-05",
+     "data": "2026-10-28",
+     "alta": false,
+     "milhas": 125400,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-10-31",
+     "alta": false,
+     "milhas": 125400,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-11-03",
+     "alta": true,
      "milhas": 27800,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
@@ -675,7 +4107,8 @@
      "duracao_h": 4
     },
     {
-     "data": "2026-11-12",
+     "data": "2026-11-06",
+     "alta": false,
      "milhas": 31900,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
@@ -684,7 +4117,28 @@
      "duracao_h": 4
     },
     {
-     "data": "2026-11-19",
+     "data": "2026-11-09",
+     "alta": false,
+     "milhas": 27800,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-11-12",
+     "alta": false,
+     "milhas": 31900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "21:30",
+     "duracao_h": 4
+    },
+    {
+     "data": "2026-11-15",
+     "alta": true,
      "milhas": 125400,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
@@ -693,16 +4147,58 @@
      "duracao_h": 3
     },
     {
-     "data": "2026-11-26",
+     "data": "2026-11-18",
+     "alta": false,
+     "milhas": 27800,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "21:30",
+     "duracao_h": 4
+    },
+    {
+     "data": "2026-11-21",
+     "alta": true,
+     "milhas": 77900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-11-24",
+     "alta": false,
+     "milhas": 125400,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-11-27",
+     "alta": false,
      "milhas": 31900,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
      "paradas": 1,
      "horario": "21:30",
      "duracao_h": 4
+    },
+    {
+     "data": "2026-11-30",
+     "alta": false,
+     "milhas": 125400,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
     },
     {
      "data": "2026-12-03",
+     "alta": false,
      "milhas": 31900,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
@@ -711,8 +4207,19 @@
      "duracao_h": 4
     },
     {
-     "data": "2026-12-10",
-     "milhas": 30400,
+     "data": "2026-12-06",
+     "alta": false,
+     "milhas": 31900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "21:30",
+     "duracao_h": 4
+    },
+    {
+     "data": "2026-12-09",
+     "alta": false,
+     "milhas": 31900,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
      "paradas": 1,
@@ -720,7 +4227,8 @@
      "duracao_h": 3
     },
     {
-     "data": "2026-12-17",
+     "data": "2026-12-12",
+     "alta": false,
      "milhas": 125400,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
@@ -729,16 +4237,38 @@
      "duracao_h": 3
     },
     {
-     "data": "2026-12-24",
+     "data": "2026-12-16",
+     "alta": true,
      "milhas": 30400,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
      "paradas": 1,
      "horario": "21:30",
      "duracao_h": 4
+    },
+    {
+     "data": "2026-12-21",
+     "alta": true,
+     "milhas": 125400,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-12-26",
+     "alta": true,
+     "milhas": 125400,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
     },
     {
      "data": "2026-12-31",
+     "alta": true,
      "milhas": 30400,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
@@ -747,7 +4277,8 @@
      "duracao_h": 4
     },
     {
-     "data": "2027-01-07",
+     "data": "2027-01-05",
+     "alta": true,
      "milhas": 125400,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
@@ -756,7 +4287,18 @@
      "duracao_h": 3
     },
     {
-     "data": "2027-01-14",
+     "data": "2027-01-10",
+     "alta": true,
+     "milhas": 125400,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2027-01-15",
+     "alta": true,
      "milhas": 30400,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
@@ -765,7 +4307,8 @@
      "duracao_h": 4
     },
     {
-     "data": "2027-01-21",
+     "data": "2027-01-20",
+     "alta": true,
      "milhas": 30400,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
@@ -774,8 +4317,19 @@
      "duracao_h": 4
     },
     {
-     "data": "2027-01-28",
-     "milhas": 88600,
+     "data": "2027-01-25",
+     "alta": true,
+     "milhas": 30400,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "21:30",
+     "duracao_h": 4
+    },
+    {
+     "data": "2027-01-30",
+     "alta": true,
+     "milhas": 125400,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
      "paradas": 1,
@@ -784,6 +4338,7 @@
     },
     {
      "data": "2027-02-04",
+     "alta": false,
      "milhas": 30400,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
@@ -792,7 +4347,8 @@
      "duracao_h": 4
     },
     {
-     "data": "2027-02-11",
+     "data": "2027-02-09",
+     "alta": true,
      "milhas": 125400,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
@@ -801,7 +4357,38 @@
      "duracao_h": 3
     },
     {
-     "data": "2027-02-18",
+     "data": "2027-02-14",
+     "alta": false,
+     "milhas": 30400,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "21:30",
+     "duracao_h": 4
+    },
+    {
+     "data": "2027-02-19",
+     "alta": false,
+     "milhas": 31900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "21:30",
+     "duracao_h": 4
+    },
+    {
+     "data": "2027-02-24",
+     "alta": false,
+     "milhas": 31900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "21:30",
+     "duracao_h": 4
+    },
+    {
+     "data": "2027-03-01",
+     "alta": false,
      "milhas": 27800,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
@@ -810,16 +4397,8 @@
      "duracao_h": 3
     },
     {
-     "data": "2027-02-25",
-     "milhas": 31900,
-     "tipo_tarifa": "SMILES_CLUB",
-     "cia": "GOL (G3)",
-     "paradas": 1,
-     "horario": "12:30",
-     "duracao_h": 3
-    },
-    {
-     "data": "2027-03-04",
+     "data": "2027-03-06",
+     "alta": false,
      "milhas": 125400,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
@@ -829,6 +4408,7 @@
     },
     {
      "data": "2027-03-11",
+     "alta": false,
      "milhas": 31900,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
@@ -837,7 +4417,58 @@
      "duracao_h": 4
     },
     {
-     "data": "2027-03-18",
+     "data": "2027-03-16",
+     "alta": false,
+     "milhas": 31900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "21:30",
+     "duracao_h": 4
+    },
+    {
+     "data": "2027-03-21",
+     "alta": true,
+     "milhas": 125400,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2027-03-29",
+     "alta": true,
+     "milhas": 27800,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2027-04-04",
+     "alta": false,
+     "milhas": 31900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "21:30",
+     "duracao_h": 4
+    },
+    {
+     "data": "2027-04-10",
+     "alta": false,
+     "milhas": 125400,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2027-04-16",
+     "alta": false,
      "milhas": 31900,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
@@ -846,31 +4477,715 @@
      "duracao_h": 3
     },
     {
-     "data": "2027-03-25",
+     "data": "2027-04-22",
+     "alta": true,
+     "milhas": 125400,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2027-04-28",
+     "alta": false,
      "milhas": 27800,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
      "paradas": 1,
-     "horario": "21:30",
-     "duracao_h": 4
+     "horario": "12:30",
+     "duracao_h": 3
     },
     {
-     "data": "2027-04-01",
+     "data": "2027-05-04",
+     "alta": false,
      "milhas": 31900,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
      "paradas": 1,
-     "horario": "21:30",
-     "duracao_h": 4
+     "horario": "12:30",
+     "duracao_h": 3
     },
     {
-     "data": "2027-04-08",
+     "data": "2027-05-10",
+     "alta": false,
      "milhas": 31900,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
      "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2027-05-16",
+     "alta": false,
+     "milhas": 30400,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2027-05-22",
+     "alta": false,
+     "milhas": 31900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2027-05-28",
+     "alta": true,
+     "milhas": 30400,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2027-06-03",
+     "alta": false,
+     "milhas": 31900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2027-06-09",
+     "alta": false,
+     "milhas": 27800,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    }
+   ]
+  },
+  {
+   "destino": "CGR",
+   "nome": "Campo Grande",
+   "regiao": "centro_oeste",
+   "limite_alerta": 12000,
+   "milhas": 28700,
+   "detalhes": {
+    "data": "2026-08-17",
+    "alta": false,
+    "milhas": 28700,
+    "tipo_tarifa": "SMILES_CLUB",
+    "cia": "GOL (G3)",
+    "paradas": 1,
+    "horario": "17:30",
+    "duracao_h": 5
+   },
+   "variacao": null,
+   "link": "https://www.smiles.com.br/mfe/emissao-passagem/?adults=1&cabin=ECONOMIC&children=0&departureDate=1786935600000&infants=0&isElegible=false&isFlexibleDateChecked=false&returnDate=&searchType=g3&segments=1&tripType=2&originAirport=MCZ&originCity=&originCountry=&originAirportIsAny=false&destinationAirport=CGR&destinCity=&destinCountry=&destinAirportIsAny=false&novo-resultado-voos=true",
+   "datas": [
+    {
+     "data": "2026-08-11",
+     "alta": false,
+     "milhas": 66600,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:45",
+     "duracao_h": 5
+    },
+    {
+     "data": "2026-08-14",
+     "alta": false,
+     "milhas": 66600,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "05:10",
+     "duracao_h": 5
+    },
+    {
+     "data": "2026-08-17",
+     "alta": false,
+     "milhas": 28700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "17:30",
+     "duracao_h": 5
+    },
+    {
+     "data": "2026-08-20",
+     "alta": false,
+     "milhas": 55200,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 2,
+     "horario": "12:30",
+     "duracao_h": 10
+    },
+    {
+     "data": "2026-08-23",
+     "alta": false,
+     "milhas": 55200,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 2,
+     "horario": "03:45",
+     "duracao_h": 12
+    },
+    {
+     "data": "2026-09-01",
+     "alta": false,
+     "milhas": 54900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "06:50",
+     "duracao_h": 8
+    },
+    {
+     "data": "2026-09-22",
+     "alta": false,
+     "milhas": 54900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "17:35",
+     "duracao_h": 6
+    },
+    {
+     "data": "2026-09-25",
+     "alta": false,
+     "milhas": 28700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "11:35",
+     "duracao_h": 11
+    },
+    {
+     "data": "2026-09-28",
+     "alta": false,
+     "milhas": 28700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "11:35",
+     "duracao_h": 11
+    },
+    {
+     "data": "2026-10-01",
+     "alta": false,
+     "milhas": 55500,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:45",
+     "duracao_h": 5
+    },
+    {
+     "data": "2026-10-04",
+     "alta": false,
+     "milhas": 55500,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "17:35",
+     "duracao_h": 6
+    },
+    {
+     "data": "2026-10-07",
+     "alta": false,
+     "milhas": 29900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "11:35",
+     "duracao_h": 11
+    },
+    {
+     "data": "2026-10-10",
+     "alta": false,
+     "milhas": 55500,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "17:35",
+     "duracao_h": 6
+    },
+    {
+     "data": "2026-10-13",
+     "alta": true,
+     "milhas": 55500,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:45",
+     "duracao_h": 6
+    },
+    {
+     "data": "2026-10-16",
+     "alta": false,
+     "milhas": 29900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "11:35",
+     "duracao_h": 11
+    },
+    {
+     "data": "2026-10-19",
+     "alta": false,
+     "milhas": 67700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:45",
+     "duracao_h": 5
+    },
+    {
+     "data": "2026-10-22",
+     "alta": false,
+     "milhas": 55500,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 2,
      "horario": "21:30",
-     "duracao_h": 4
+     "duracao_h": 13
+    },
+    {
+     "data": "2026-10-25",
+     "alta": false,
+     "milhas": 67700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "04:55",
+     "duracao_h": 5
+    },
+    {
+     "data": "2026-10-28",
+     "alta": false,
+     "milhas": 55500,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 3,
+     "horario": "21:30",
+     "duracao_h": 22
+    },
+    {
+     "data": "2026-10-31",
+     "alta": false,
+     "milhas": 67700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "17:35",
+     "duracao_h": 6
+    },
+    {
+     "data": "2026-11-03",
+     "alta": true,
+     "milhas": 55500,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "17:35",
+     "duracao_h": 6
+    },
+    {
+     "data": "2026-11-06",
+     "alta": false,
+     "milhas": 29900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "11:55",
+     "duracao_h": 11
+    },
+    {
+     "data": "2026-11-09",
+     "alta": false,
+     "milhas": 29900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "17:30",
+     "duracao_h": 6
+    },
+    {
+     "data": "2026-11-12",
+     "alta": false,
+     "milhas": 55500,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "06:50",
+     "duracao_h": 8
+    },
+    {
+     "data": "2026-11-15",
+     "alta": true,
+     "milhas": 67700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "04:55",
+     "duracao_h": 5
+    },
+    {
+     "data": "2026-11-18",
+     "alta": false,
+     "milhas": 29900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "11:55",
+     "duracao_h": 11
+    },
+    {
+     "data": "2026-11-21",
+     "alta": true,
+     "milhas": 55500,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "05:00",
+     "duracao_h": 10
+    },
+    {
+     "data": "2026-11-24",
+     "alta": false,
+     "milhas": 67700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 2,
+     "horario": "04:30",
+     "duracao_h": 11
+    },
+    {
+     "data": "2026-11-27",
+     "alta": false,
+     "milhas": 29900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "11:55",
+     "duracao_h": 11
+    },
+    {
+     "data": "2026-11-30",
+     "alta": false,
+     "milhas": 29900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 3,
+     "horario": "21:30",
+     "duracao_h": 22
+    },
+    {
+     "data": "2026-12-03",
+     "alta": false,
+     "milhas": 67700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "06:50",
+     "duracao_h": 8
+    },
+    {
+     "data": "2026-12-06",
+     "alta": false,
+     "milhas": 36600,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 2,
+     "horario": "21:30",
+     "duracao_h": 13
+    },
+    {
+     "data": "2026-12-09",
+     "alta": false,
+     "milhas": 36600,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "11:55",
+     "duracao_h": 11
+    },
+    {
+     "data": "2026-12-12",
+     "alta": false,
+     "milhas": 73600,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 3,
+     "horario": "11:40",
+     "duracao_h": 28
+    },
+    {
+     "data": "2026-12-16",
+     "alta": true,
+     "milhas": 73600,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "17:30",
+     "duracao_h": 6
+    },
+    {
+     "data": "2026-12-21",
+     "alta": true,
+     "milhas": 73600,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 2,
+     "horario": "04:30",
+     "duracao_h": 11
+    },
+    {
+     "data": "2026-12-26",
+     "alta": true,
+     "milhas": 77000,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 2,
+     "horario": "04:30",
+     "duracao_h": 10
+    },
+    {
+     "data": "2026-12-31",
+     "alta": true,
+     "milhas": 73600,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:40",
+     "duracao_h": 6
+    },
+    {
+     "data": "2027-01-05",
+     "alta": true,
+     "milhas": 94800,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 2,
+     "horario": "04:30",
+     "duracao_h": 11
+    },
+    {
+     "data": "2027-01-10",
+     "alta": true,
+     "milhas": 88700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 2,
+     "horario": "04:30",
+     "duracao_h": 11
+    },
+    {
+     "data": "2027-01-15",
+     "alta": true,
+     "milhas": 88700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "06:50",
+     "duracao_h": 8
+    },
+    {
+     "data": "2027-01-20",
+     "alta": true,
+     "milhas": 73600,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "06:50",
+     "duracao_h": 8
+    },
+    {
+     "data": "2027-01-25",
+     "alta": true,
+     "milhas": 88700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "06:50",
+     "duracao_h": 8
+    },
+    {
+     "data": "2027-01-30",
+     "alta": true,
+     "milhas": 88700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:40",
+     "duracao_h": 11
+    },
+    {
+     "data": "2027-02-04",
+     "alta": false,
+     "milhas": 149700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "17:35",
+     "duracao_h": 6
+    },
+    {
+     "data": "2027-02-09",
+     "alta": true,
+     "milhas": 149700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "17:35",
+     "duracao_h": 6
+    },
+    {
+     "data": "2027-02-14",
+     "alta": false,
+     "milhas": 73600,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "07:00",
+     "duracao_h": 8
+    },
+    {
+     "data": "2027-02-19",
+     "alta": false,
+     "milhas": 34400,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "17:30",
+     "duracao_h": 6
+    },
+    {
+     "data": "2027-02-24",
+     "alta": false,
+     "milhas": 29900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "17:30",
+     "duracao_h": 6
+    },
+    {
+     "data": "2027-03-01",
+     "alta": false,
+     "milhas": 29900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "17:30",
+     "duracao_h": 6
+    },
+    {
+     "data": "2027-03-06",
+     "alta": false,
+     "milhas": 55500,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "05:00",
+     "duracao_h": 10
+    },
+    {
+     "data": "2027-03-11",
+     "alta": false,
+     "milhas": 36600,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 2,
+     "horario": "21:30",
+     "duracao_h": 13
+    },
+    {
+     "data": "2027-03-16",
+     "alta": false,
+     "milhas": 55500,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "17:35",
+     "duracao_h": 6
+    },
+    {
+     "data": "2027-03-21",
+     "alta": true,
+     "milhas": 29900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "07:00",
+     "duracao_h": 8
+    },
+    {
+     "data": "2027-03-29",
+     "alta": true,
+     "milhas": 29900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "17:30",
+     "duracao_h": 6
+    },
+    {
+     "data": "2027-04-04",
+     "alta": false,
+     "milhas": 29900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "07:00",
+     "duracao_h": 8
+    },
+    {
+     "data": "2027-04-10",
+     "alta": false,
+     "milhas": 55500,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "05:00",
+     "duracao_h": 10
+    },
+    {
+     "data": "2027-04-16",
+     "alta": false,
+     "milhas": 34400,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "17:30",
+     "duracao_h": 6
+    },
+    {
+     "data": "2027-04-22",
+     "alta": true,
+     "milhas": 41800,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 2,
+     "horario": "21:30",
+     "duracao_h": 13
+    },
+    {
+     "data": "2027-04-28",
+     "alta": false,
+     "milhas": 29900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "17:30",
+     "duracao_h": 6
     }
    ]
   },
@@ -881,7 +5196,8 @@
    "limite_alerta": 10000,
    "milhas": 31800,
    "detalhes": {
-    "data": "2026-10-15",
+    "data": "2026-10-22",
+    "alta": false,
     "milhas": 31800,
     "tipo_tarifa": "SMILES_CLUB",
     "cia": "GOL (G3)",
@@ -889,12 +5205,183 @@
     "horario": "21:30",
     "duracao_h": 4
    },
-   "variacao": 1500,
-   "link": "https://www.smiles.com.br/mfe/emissao-passagem/?adults=1&cabin=ECONOMIC&children=0&departureDate=1792033200000&infants=0&isElegible=false&isFlexibleDateChecked=false&returnDate=&searchType=g3&segments=1&tripType=2&originAirport=MCZ&originCity=&originCountry=&originAirportIsAny=false&destinationAirport=NAT&destinCity=&destinCountry=&destinAirportIsAny=false&novo-resultado-voos=true",
+   "variacao": 0,
+   "link": "https://www.smiles.com.br/mfe/emissao-passagem/?adults=1&cabin=ECONOMIC&children=0&departureDate=1792638000000&infants=0&isElegible=false&isFlexibleDateChecked=false&returnDate=&searchType=g3&segments=1&tripType=2&originAirport=MCZ&originCity=&originCountry=&originAirportIsAny=false&destinationAirport=NAT&destinCity=&destinCountry=&destinAirportIsAny=false&novo-resultado-voos=true",
    "datas": [
     {
-     "data": "2026-10-15",
-     "milhas": 31800,
+     "data": "2026-08-11",
+     "alta": false,
+     "milhas": 45900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "04:30",
+     "duracao_h": 6
+    },
+    {
+     "data": "2026-08-14",
+     "alta": false,
+     "milhas": 31900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "21:30",
+     "duracao_h": 4
+    },
+    {
+     "data": "2026-08-17",
+     "alta": false,
+     "milhas": 42900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "04:30",
+     "duracao_h": 6
+    },
+    {
+     "data": "2026-08-20",
+     "alta": false,
+     "milhas": 31900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "21:30",
+     "duracao_h": 4
+    },
+    {
+     "data": "2026-08-23",
+     "alta": false,
+     "milhas": 31900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "21:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-08-26",
+     "alta": false,
+     "milhas": 63700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-08-29",
+     "alta": false,
+     "milhas": 42900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "04:30",
+     "duracao_h": 6
+    },
+    {
+     "data": "2026-09-01",
+     "alta": false,
+     "milhas": 42900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-09-04",
+     "alta": false,
+     "milhas": 42900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-09-07",
+     "alta": true,
+     "milhas": 49900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "21:30",
+     "duracao_h": 4
+    },
+    {
+     "data": "2026-09-10",
+     "alta": false,
+     "milhas": 49900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "04:30",
+     "duracao_h": 6
+    },
+    {
+     "data": "2026-09-13",
+     "alta": false,
+     "milhas": 31900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "21:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-09-16",
+     "alta": false,
+     "milhas": 63700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-09-19",
+     "alta": false,
+     "milhas": 63700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-09-22",
+     "alta": false,
+     "milhas": 49900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "04:30",
+     "duracao_h": 6
+    },
+    {
+     "data": "2026-09-25",
+     "alta": false,
+     "milhas": 31900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "21:30",
+     "duracao_h": 4
+    },
+    {
+     "data": "2026-09-28",
+     "alta": false,
+     "milhas": 49900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "04:30",
+     "duracao_h": 6
+    },
+    {
+     "data": "2026-10-01",
+     "alta": false,
+     "milhas": 40800,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
      "paradas": 1,
@@ -903,6 +5390,7 @@
     },
     {
      "data": "2026-10-22",
+     "alta": false,
      "milhas": 31800,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
@@ -911,7 +5399,38 @@
      "duracao_h": 4
     },
     {
-     "data": "2026-10-29",
+     "data": "2026-10-25",
+     "alta": false,
+     "milhas": 31800,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "21:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-10-28",
+     "alta": false,
+     "milhas": 63700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-10-31",
+     "alta": false,
+     "milhas": 42900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "04:30",
+     "duracao_h": 6
+    },
+    {
+     "data": "2026-11-03",
+     "alta": true,
      "milhas": 31800,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
@@ -920,7 +5439,18 @@
      "duracao_h": 4
     },
     {
-     "data": "2026-11-05",
+     "data": "2026-11-06",
+     "alta": false,
+     "milhas": 31900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "21:30",
+     "duracao_h": 4
+    },
+    {
+     "data": "2026-11-09",
+     "alta": false,
      "milhas": 31800,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
@@ -930,6 +5460,7 @@
     },
     {
      "data": "2026-11-12",
+     "alta": false,
      "milhas": 31900,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
@@ -938,35 +5469,19 @@
      "duracao_h": 4
     },
     {
-     "data": "2026-11-19",
-     "milhas": 42900,
+     "data": "2026-11-18",
+     "alta": false,
+     "milhas": 31800,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
      "paradas": 1,
-     "horario": "04:30",
-     "duracao_h": 6
+     "horario": "21:30",
+     "duracao_h": 4
     },
     {
-     "data": "2026-11-26",
-     "milhas": 42900,
-     "tipo_tarifa": "SMILES_CLUB",
-     "cia": "GOL (G3)",
-     "paradas": 1,
-     "horario": "04:30",
-     "duracao_h": 6
-    },
-    {
-     "data": "2026-12-03",
-     "milhas": 42900,
-     "tipo_tarifa": "SMILES_CLUB",
-     "cia": "GOL (G3)",
-     "paradas": 1,
-     "horario": "04:30",
-     "duracao_h": 6
-    },
-    {
-     "data": "2026-12-10",
-     "milhas": 31900,
+     "data": "2026-11-21",
+     "alta": true,
+     "milhas": 40800,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
      "paradas": 1,
@@ -974,8 +5489,19 @@
      "duracao_h": 3
     },
     {
-     "data": "2026-12-17",
-     "milhas": 31800,
+     "data": "2026-11-24",
+     "alta": false,
+     "milhas": 42900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "04:30",
+     "duracao_h": 6
+    },
+    {
+     "data": "2026-11-27",
+     "alta": false,
+     "milhas": 31900,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
      "paradas": 1,
@@ -983,25 +5509,8 @@
      "duracao_h": 4
     },
     {
-     "data": "2026-12-24",
-     "milhas": 31800,
-     "tipo_tarifa": "SMILES_CLUB",
-     "cia": "GOL (G3)",
-     "paradas": 1,
-     "horario": "21:30",
-     "duracao_h": 4
-    },
-    {
-     "data": "2026-12-31",
-     "milhas": 31800,
-     "tipo_tarifa": "SMILES_CLUB",
-     "cia": "GOL (G3)",
-     "paradas": 1,
-     "horario": "21:30",
-     "duracao_h": 4
-    },
-    {
-     "data": "2027-01-07",
+     "data": "2026-11-30",
+     "alta": false,
      "milhas": 49900,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
@@ -1010,7 +5519,48 @@
      "duracao_h": 3
     },
     {
-     "data": "2027-01-14",
+     "data": "2026-12-03",
+     "alta": false,
+     "milhas": 42900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "04:30",
+     "duracao_h": 6
+    },
+    {
+     "data": "2026-12-06",
+     "alta": false,
+     "milhas": 31900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "21:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-12-09",
+     "alta": false,
+     "milhas": 31900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-12-12",
+     "alta": false,
+     "milhas": 49900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-12-16",
+     "alta": true,
      "milhas": 31800,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
@@ -1019,7 +5569,148 @@
      "duracao_h": 4
     },
     {
-     "data": "2027-01-21",
+     "data": "2026-12-21",
+     "alta": true,
+     "milhas": 31800,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "21:30",
+     "duracao_h": 4
+    },
+    {
+     "data": "2026-12-26",
+     "alta": true,
+     "milhas": 98000,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-12-31",
+     "alta": true,
+     "milhas": 31800,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "21:30",
+     "duracao_h": 4
+    },
+    {
+     "data": "2027-01-05",
+     "alta": true,
+     "milhas": 49900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "21:30",
+     "duracao_h": 4
+    },
+    {
+     "data": "2027-01-10",
+     "alta": true,
+     "milhas": 42900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "04:30",
+     "duracao_h": 6
+    },
+    {
+     "data": "2027-01-15",
+     "alta": true,
+     "milhas": 31800,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "21:30",
+     "duracao_h": 4
+    },
+    {
+     "data": "2027-01-20",
+     "alta": true,
+     "milhas": 31800,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "21:30",
+     "duracao_h": 4
+    },
+    {
+     "data": "2027-01-25",
+     "alta": true,
+     "milhas": 31800,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "21:30",
+     "duracao_h": 4
+    },
+    {
+     "data": "2027-01-30",
+     "alta": true,
+     "milhas": 42900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "04:30",
+     "duracao_h": 6
+    },
+    {
+     "data": "2027-02-04",
+     "alta": false,
+     "milhas": 31800,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "21:30",
+     "duracao_h": 4
+    },
+    {
+     "data": "2027-02-09",
+     "alta": true,
+     "milhas": 49900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2027-02-14",
+     "alta": false,
+     "milhas": 31900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2027-02-19",
+     "alta": false,
+     "milhas": 31900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "21:30",
+     "duracao_h": 4
+    },
+    {
+     "data": "2027-02-24",
+     "alta": false,
+     "milhas": 31900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "21:30",
+     "duracao_h": 4
+    },
+    {
+     "data": "2027-03-01",
+     "alta": false,
      "milhas": 31800,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
@@ -1028,8 +5719,810 @@
      "duracao_h": 3
     },
     {
-     "data": "2027-01-28",
+     "data": "2027-03-06",
+     "alta": false,
      "milhas": 40800,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "04:30",
+     "duracao_h": 6
+    },
+    {
+     "data": "2027-03-11",
+     "alta": false,
+     "milhas": 31900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "21:30",
+     "duracao_h": 4
+    },
+    {
+     "data": "2027-03-16",
+     "alta": false,
+     "milhas": 31900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "21:30",
+     "duracao_h": 4
+    },
+    {
+     "data": "2027-03-21",
+     "alta": true,
+     "milhas": 31900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2027-03-29",
+     "alta": true,
+     "milhas": 31800,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2027-04-04",
+     "alta": false,
+     "milhas": 31900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "21:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2027-04-10",
+     "alta": false,
+     "milhas": 31900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "04:30",
+     "duracao_h": 6
+    },
+    {
+     "data": "2027-04-16",
+     "alta": false,
+     "milhas": 31900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "21:30",
+     "duracao_h": 4
+    },
+    {
+     "data": "2027-04-22",
+     "alta": true,
+     "milhas": 31900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "04:30",
+     "duracao_h": 6
+    },
+    {
+     "data": "2027-04-28",
+     "alta": false,
+     "milhas": 31900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "21:30",
+     "duracao_h": 4
+    },
+    {
+     "data": "2027-05-04",
+     "alta": false,
+     "milhas": 31900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2027-05-10",
+     "alta": false,
+     "milhas": 31900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2027-05-16",
+     "alta": false,
+     "milhas": 31900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2027-05-22",
+     "alta": false,
+     "milhas": 31900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2027-05-28",
+     "alta": true,
+     "milhas": 31800,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2027-06-03",
+     "alta": false,
+     "milhas": 31800,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "04:30",
+     "duracao_h": 6
+    },
+    {
+     "data": "2027-06-09",
+     "alta": false,
+     "milhas": 31800,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    }
+   ]
+  },
+  {
+   "destino": "SLZ",
+   "nome": "São Luís",
+   "regiao": "nordeste",
+   "limite_alerta": 10000,
+   "milhas": 31900,
+   "detalhes": {
+    "data": "2026-12-03",
+    "alta": false,
+    "milhas": 31900,
+    "tipo_tarifa": "SMILES_CLUB",
+    "cia": "GOL (G3)",
+    "paradas": 2,
+    "horario": "21:30",
+    "duracao_h": 13
+   },
+   "variacao": null,
+   "link": "https://www.smiles.com.br/mfe/emissao-passagem/?adults=1&cabin=ECONOMIC&children=0&departureDate=1796266800000&infants=0&isElegible=false&isFlexibleDateChecked=false&returnDate=&searchType=g3&segments=1&tripType=2&originAirport=MCZ&originCity=&originCountry=&originAirportIsAny=false&destinationAirport=SLZ&destinCity=&destinCountry=&destinAirportIsAny=false&novo-resultado-voos=true",
+   "datas": [
+    {
+     "data": "2026-08-11",
+     "alta": false,
+     "milhas": 104100,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "17:35",
+     "duracao_h": 7
+    },
+    {
+     "data": "2026-08-14",
+     "alta": false,
+     "milhas": 62900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "11:35",
+     "duracao_h": 11
+    },
+    {
+     "data": "2026-08-17",
+     "alta": false,
+     "milhas": 62900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "04:30",
+     "duracao_h": 6
+    },
+    {
+     "data": "2026-08-20",
+     "alta": false,
+     "milhas": 48100,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "21:30",
+     "duracao_h": 4
+    },
+    {
+     "data": "2026-08-23",
+     "alta": false,
+     "milhas": 89400,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "17:05",
+     "duracao_h": 8
+    },
+    {
+     "data": "2026-08-26",
+     "alta": false,
+     "milhas": 62900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "05:10",
+     "duracao_h": 7
+    },
+    {
+     "data": "2026-08-29",
+     "alta": false,
+     "milhas": 62900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "04:30",
+     "duracao_h": 6
+    },
+    {
+     "data": "2026-09-01",
+     "alta": false,
+     "milhas": 62900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "17:35",
+     "duracao_h": 7
+    },
+    {
+     "data": "2026-09-04",
+     "alta": false,
+     "milhas": 62900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "17:35",
+     "duracao_h": 7
+    },
+    {
+     "data": "2026-09-07",
+     "alta": true,
+     "milhas": 89400,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "21:30",
+     "duracao_h": 4
+    },
+    {
+     "data": "2026-09-10",
+     "alta": false,
+     "milhas": 62900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "17:35",
+     "duracao_h": 8
+    },
+    {
+     "data": "2026-09-13",
+     "alta": false,
+     "milhas": 62900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "05:10",
+     "duracao_h": 7
+    },
+    {
+     "data": "2026-09-16",
+     "alta": false,
+     "milhas": 52800,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "05:10",
+     "duracao_h": 7
+    },
+    {
+     "data": "2026-09-19",
+     "alta": false,
+     "milhas": 52800,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "04:20",
+     "duracao_h": 9
+    },
+    {
+     "data": "2026-09-22",
+     "alta": false,
+     "milhas": 52800,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "17:35",
+     "duracao_h": 7
+    },
+    {
+     "data": "2026-09-25",
+     "alta": false,
+     "milhas": 43700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "21:30",
+     "duracao_h": 4
+    },
+    {
+     "data": "2026-09-28",
+     "alta": false,
+     "milhas": 52800,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "17:35",
+     "duracao_h": 7
+    },
+    {
+     "data": "2026-10-01",
+     "alta": false,
+     "milhas": 52800,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "17:30",
+     "duracao_h": 8
+    },
+    {
+     "data": "2026-10-04",
+     "alta": false,
+     "milhas": 52800,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "17:05",
+     "duracao_h": 8
+    },
+    {
+     "data": "2026-10-07",
+     "alta": false,
+     "milhas": 39300,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "21:30",
+     "duracao_h": 4
+    },
+    {
+     "data": "2026-10-10",
+     "alta": false,
+     "milhas": 49800,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "17:35",
+     "duracao_h": 8
+    },
+    {
+     "data": "2026-10-13",
+     "alta": true,
+     "milhas": 52800,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "04:30",
+     "duracao_h": 6
+    },
+    {
+     "data": "2026-10-16",
+     "alta": false,
+     "milhas": 62900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "04:30",
+     "duracao_h": 6
+    },
+    {
+     "data": "2026-10-19",
+     "alta": false,
+     "milhas": 62900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "17:30",
+     "duracao_h": 9
+    },
+    {
+     "data": "2026-10-22",
+     "alta": false,
+     "milhas": 52800,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "05:10",
+     "duracao_h": 8
+    },
+    {
+     "data": "2026-10-25",
+     "alta": false,
+     "milhas": 62900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:40",
+     "duracao_h": 13
+    },
+    {
+     "data": "2026-10-28",
+     "alta": false,
+     "milhas": 62900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "17:30",
+     "duracao_h": 8
+    },
+    {
+     "data": "2026-10-31",
+     "alta": false,
+     "milhas": 62900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "17:35",
+     "duracao_h": 8
+    },
+    {
+     "data": "2026-11-03",
+     "alta": true,
+     "milhas": 62900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "17:30",
+     "duracao_h": 8
+    },
+    {
+     "data": "2026-11-06",
+     "alta": false,
+     "milhas": 44400,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 2,
+     "horario": "21:30",
+     "duracao_h": 13
+    },
+    {
+     "data": "2026-11-09",
+     "alta": false,
+     "milhas": 44400,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "17:30",
+     "duracao_h": 8
+    },
+    {
+     "data": "2026-11-12",
+     "alta": false,
+     "milhas": 62900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "17:35",
+     "duracao_h": 8
+    },
+    {
+     "data": "2026-11-15",
+     "alta": true,
+     "milhas": 62900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "04:30",
+     "duracao_h": 6
+    },
+    {
+     "data": "2026-11-18",
+     "alta": false,
+     "milhas": 52800,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "17:30",
+     "duracao_h": 8
+    },
+    {
+     "data": "2026-11-21",
+     "alta": true,
+     "milhas": 49800,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "04:30",
+     "duracao_h": 6
+    },
+    {
+     "data": "2026-11-24",
+     "alta": false,
+     "milhas": 62900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "04:30",
+     "duracao_h": 6
+    },
+    {
+     "data": "2026-11-27",
+     "alta": false,
+     "milhas": 44400,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "04:30",
+     "duracao_h": 6
+    },
+    {
+     "data": "2026-11-30",
+     "alta": false,
+     "milhas": 62900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "17:30",
+     "duracao_h": 8
+    },
+    {
+     "data": "2026-12-03",
+     "alta": false,
+     "milhas": 31900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 2,
+     "horario": "21:30",
+     "duracao_h": 13
+    },
+    {
+     "data": "2026-12-31",
+     "alta": true,
+     "milhas": 45600,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "17:30",
+     "duracao_h": 8
+    },
+    {
+     "data": "2027-01-05",
+     "alta": true,
+     "milhas": 73000,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "04:30",
+     "duracao_h": 6
+    },
+    {
+     "data": "2027-01-15",
+     "alta": true,
+     "milhas": 73000,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 4
+    },
+    {
+     "data": "2027-02-19",
+     "alta": false,
+     "milhas": 31900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "04:30",
+     "duracao_h": 6
+    },
+    {
+     "data": "2027-02-24",
+     "alta": false,
+     "milhas": 31900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "04:30",
+     "duracao_h": 6
+    },
+    {
+     "data": "2027-03-01",
+     "alta": false,
+     "milhas": 31900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "04:30",
+     "duracao_h": 6
+    },
+    {
+     "data": "2027-03-06",
+     "alta": false,
+     "milhas": 31900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "04:30",
+     "duracao_h": 6
+    },
+    {
+     "data": "2027-03-11",
+     "alta": false,
+     "milhas": 31900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "04:30",
+     "duracao_h": 6
+    },
+    {
+     "data": "2027-03-16",
+     "alta": false,
+     "milhas": 31900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "04:30",
+     "duracao_h": 6
+    },
+    {
+     "data": "2027-03-21",
+     "alta": true,
+     "milhas": 31900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 4
+    },
+    {
+     "data": "2027-03-29",
+     "alta": true,
+     "milhas": 31900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "04:30",
+     "duracao_h": 6
+    },
+    {
+     "data": "2027-04-04",
+     "alta": false,
+     "milhas": 31900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "04:30",
+     "duracao_h": 6
+    },
+    {
+     "data": "2027-04-10",
+     "alta": false,
+     "milhas": 31900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "04:30",
+     "duracao_h": 6
+    },
+    {
+     "data": "2027-04-16",
+     "alta": false,
+     "milhas": 31900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 4
+    },
+    {
+     "data": "2027-04-22",
+     "alta": true,
+     "milhas": 31900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "04:30",
+     "duracao_h": 6
+    },
+    {
+     "data": "2027-04-28",
+     "alta": false,
+     "milhas": 31900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "04:30",
+     "duracao_h": 6
+    },
+    {
+     "data": "2027-05-04",
+     "alta": false,
+     "milhas": 31900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 4
+    },
+    {
+     "data": "2027-05-10",
+     "alta": false,
+     "milhas": 31900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 4
+    },
+    {
+     "data": "2027-05-16",
+     "alta": false,
+     "milhas": 31900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 4
+    },
+    {
+     "data": "2027-05-22",
+     "alta": false,
+     "milhas": 31900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 4
+    },
+    {
+     "data": "2027-05-28",
+     "alta": true,
+     "milhas": 44400,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "04:30",
+     "duracao_h": 6
+    },
+    {
+     "data": "2027-06-03",
+     "alta": false,
+     "milhas": 31900,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 4
+    },
+    {
+     "data": "2027-06-09",
+     "alta": false,
+     "milhas": 44400,
      "tipo_tarifa": "SMILES_CLUB",
      "cia": "GOL (G3)",
      "paradas": 1,
@@ -1037,6 +6530,1392 @@
      "duracao_h": 6
     }
    ]
+  },
+  {
+   "destino": "THE",
+   "nome": "Teresina",
+   "regiao": "nordeste",
+   "limite_alerta": 10000,
+   "milhas": 36600,
+   "detalhes": {
+    "data": "2027-02-19",
+    "alta": false,
+    "milhas": 36600,
+    "tipo_tarifa": "SMILES_CLUB",
+    "cia": "GOL (G3)",
+    "paradas": 1,
+    "horario": "17:00",
+    "duracao_h": 6
+   },
+   "variacao": null,
+   "link": "https://www.smiles.com.br/mfe/emissao-passagem/?adults=1&cabin=ECONOMIC&children=0&departureDate=1803006000000&infants=0&isElegible=false&isFlexibleDateChecked=false&returnDate=&searchType=g3&segments=1&tripType=2&originAirport=MCZ&originCity=&originCountry=&originAirportIsAny=false&destinationAirport=THE&destinCity=&destinCountry=&destinAirportIsAny=false&novo-resultado-voos=true",
+   "datas": [
+    {
+     "data": "2026-08-11",
+     "alta": false,
+     "milhas": 81100,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "17:00",
+     "duracao_h": 6
+    },
+    {
+     "data": "2026-08-14",
+     "alta": false,
+     "milhas": 63700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "17:05",
+     "duracao_h": 9
+    },
+    {
+     "data": "2026-08-17",
+     "alta": false,
+     "milhas": 63700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "17:30",
+     "duracao_h": 9
+    },
+    {
+     "data": "2026-08-20",
+     "alta": false,
+     "milhas": 63700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 4
+    },
+    {
+     "data": "2026-09-10",
+     "alta": false,
+     "milhas": 63700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 4
+    },
+    {
+     "data": "2026-09-13",
+     "alta": false,
+     "milhas": 75200,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "17:05",
+     "duracao_h": 6
+    },
+    {
+     "data": "2026-10-22",
+     "alta": false,
+     "milhas": 37400,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 4
+    },
+    {
+     "data": "2026-10-25",
+     "alta": false,
+     "milhas": 60800,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 2,
+     "horario": "12:30",
+     "duracao_h": 10
+    },
+    {
+     "data": "2026-10-28",
+     "alta": false,
+     "milhas": 60800,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "17:30",
+     "duracao_h": 9
+    },
+    {
+     "data": "2026-10-31",
+     "alta": false,
+     "milhas": 45000,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "04:30",
+     "duracao_h": 6
+    },
+    {
+     "data": "2026-11-03",
+     "alta": true,
+     "milhas": 60800,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "17:00",
+     "duracao_h": 6
+    },
+    {
+     "data": "2026-11-06",
+     "alta": false,
+     "milhas": 45200,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 2,
+     "horario": "12:30",
+     "duracao_h": 10
+    },
+    {
+     "data": "2026-11-09",
+     "alta": false,
+     "milhas": 37400,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "17:30",
+     "duracao_h": 9
+    },
+    {
+     "data": "2026-11-12",
+     "alta": false,
+     "milhas": 45200,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 4
+    },
+    {
+     "data": "2026-11-15",
+     "alta": true,
+     "milhas": 55700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 2,
+     "horario": "12:30",
+     "duracao_h": 10
+    },
+    {
+     "data": "2026-11-18",
+     "alta": false,
+     "milhas": 45200,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 2,
+     "horario": "21:30",
+     "duracao_h": 13
+    },
+    {
+     "data": "2026-11-21",
+     "alta": true,
+     "milhas": 45000,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 4
+    },
+    {
+     "data": "2026-11-24",
+     "alta": false,
+     "milhas": 60800,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "17:00",
+     "duracao_h": 6
+    },
+    {
+     "data": "2026-11-27",
+     "alta": false,
+     "milhas": 45200,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 2,
+     "horario": "21:30",
+     "duracao_h": 13
+    },
+    {
+     "data": "2026-11-30",
+     "alta": false,
+     "milhas": 60800,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "17:30",
+     "duracao_h": 9
+    },
+    {
+     "data": "2026-12-03",
+     "alta": false,
+     "milhas": 37400,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 4
+    },
+    {
+     "data": "2026-12-06",
+     "alta": false,
+     "milhas": 60800,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 2,
+     "horario": "12:30",
+     "duracao_h": 10
+    },
+    {
+     "data": "2026-12-09",
+     "alta": false,
+     "milhas": 60800,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "17:00",
+     "duracao_h": 6
+    },
+    {
+     "data": "2026-12-12",
+     "alta": false,
+     "milhas": 58700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 4
+    },
+    {
+     "data": "2026-12-16",
+     "alta": true,
+     "milhas": 73500,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "17:00",
+     "duracao_h": 6
+    },
+    {
+     "data": "2026-12-21",
+     "alta": true,
+     "milhas": 83400,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "17:00",
+     "duracao_h": 6
+    },
+    {
+     "data": "2026-12-26",
+     "alta": true,
+     "milhas": 38700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 4
+    },
+    {
+     "data": "2026-12-31",
+     "alta": true,
+     "milhas": 38700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 4
+    },
+    {
+     "data": "2027-01-05",
+     "alta": true,
+     "milhas": 83400,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 2,
+     "horario": "12:30",
+     "duracao_h": 10
+    },
+    {
+     "data": "2027-01-10",
+     "alta": true,
+     "milhas": 73500,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 2,
+     "horario": "12:30",
+     "duracao_h": 10
+    },
+    {
+     "data": "2027-01-15",
+     "alta": true,
+     "milhas": 58700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 2,
+     "horario": "12:30",
+     "duracao_h": 10
+    },
+    {
+     "data": "2027-01-20",
+     "alta": true,
+     "milhas": 58700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 2,
+     "horario": "12:30",
+     "duracao_h": 10
+    },
+    {
+     "data": "2027-01-25",
+     "alta": true,
+     "milhas": 58700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 2,
+     "horario": "12:30",
+     "duracao_h": 10
+    },
+    {
+     "data": "2027-01-30",
+     "alta": true,
+     "milhas": 45400,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "04:30",
+     "duracao_h": 6
+    },
+    {
+     "data": "2027-02-04",
+     "alta": false,
+     "milhas": 45400,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 4
+    },
+    {
+     "data": "2027-02-09",
+     "alta": true,
+     "milhas": 100500,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "17:00",
+     "duracao_h": 6
+    },
+    {
+     "data": "2027-02-14",
+     "alta": false,
+     "milhas": 83400,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "17:00",
+     "duracao_h": 6
+    },
+    {
+     "data": "2027-02-19",
+     "alta": false,
+     "milhas": 36600,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "17:00",
+     "duracao_h": 6
+    },
+    {
+     "data": "2027-02-24",
+     "alta": false,
+     "milhas": 37400,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "17:30",
+     "duracao_h": 9
+    },
+    {
+     "data": "2027-03-01",
+     "alta": false,
+     "milhas": 37400,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "17:30",
+     "duracao_h": 9
+    },
+    {
+     "data": "2027-03-06",
+     "alta": false,
+     "milhas": 45200,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 4
+    },
+    {
+     "data": "2027-03-11",
+     "alta": false,
+     "milhas": 37400,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "04:30",
+     "duracao_h": 6
+    },
+    {
+     "data": "2027-03-16",
+     "alta": false,
+     "milhas": 60800,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "17:00",
+     "duracao_h": 6
+    },
+    {
+     "data": "2027-03-21",
+     "alta": true,
+     "milhas": 45200,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "17:00",
+     "duracao_h": 6
+    },
+    {
+     "data": "2027-03-29",
+     "alta": true,
+     "milhas": 36600,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "17:00",
+     "duracao_h": 6
+    },
+    {
+     "data": "2027-04-04",
+     "alta": false,
+     "milhas": 45200,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "17:00",
+     "duracao_h": 6
+    },
+    {
+     "data": "2027-04-10",
+     "alta": false,
+     "milhas": 37400,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "04:30",
+     "duracao_h": 6
+    },
+    {
+     "data": "2027-04-16",
+     "alta": false,
+     "milhas": 36600,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "17:00",
+     "duracao_h": 6
+    },
+    {
+     "data": "2027-04-22",
+     "alta": true,
+     "milhas": 36600,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "17:00",
+     "duracao_h": 6
+    },
+    {
+     "data": "2027-04-28",
+     "alta": false,
+     "milhas": 36600,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "17:00",
+     "duracao_h": 6
+    },
+    {
+     "data": "2027-05-04",
+     "alta": false,
+     "milhas": 36600,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "17:00",
+     "duracao_h": 6
+    },
+    {
+     "data": "2027-05-10",
+     "alta": false,
+     "milhas": 36600,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "17:00",
+     "duracao_h": 6
+    },
+    {
+     "data": "2027-05-16",
+     "alta": false,
+     "milhas": 36600,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "17:00",
+     "duracao_h": 6
+    },
+    {
+     "data": "2027-05-22",
+     "alta": false,
+     "milhas": 36600,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "17:00",
+     "duracao_h": 6
+    },
+    {
+     "data": "2027-05-28",
+     "alta": true,
+     "milhas": 37400,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "17:00",
+     "duracao_h": 6
+    },
+    {
+     "data": "2027-06-03",
+     "alta": false,
+     "milhas": 37400,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 4
+    },
+    {
+     "data": "2027-06-09",
+     "alta": false,
+     "milhas": 37400,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "17:00",
+     "duracao_h": 6
+    }
+   ]
+  },
+  {
+   "destino": "JPA",
+   "nome": "João Pessoa",
+   "regiao": "nordeste",
+   "limite_alerta": 10000,
+   "milhas": 40700,
+   "detalhes": {
+    "data": "2026-10-16",
+    "alta": false,
+    "milhas": 40700,
+    "tipo_tarifa": "SMILES_CLUB",
+    "cia": "GOL (G3)",
+    "paradas": 1,
+    "horario": "12:30",
+    "duracao_h": 3
+   },
+   "variacao": null,
+   "link": "https://www.smiles.com.br/mfe/emissao-passagem/?adults=1&cabin=ECONOMIC&children=0&departureDate=1792119600000&infants=0&isElegible=false&isFlexibleDateChecked=false&returnDate=&searchType=g3&segments=1&tripType=2&originAirport=MCZ&originCity=&originCountry=&originAirportIsAny=false&destinationAirport=JPA&destinCity=&destinCountry=&destinAirportIsAny=false&novo-resultado-voos=true",
+   "datas": [
+    {
+     "data": "2026-08-11",
+     "alta": false,
+     "milhas": 98800,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-08-14",
+     "alta": false,
+     "milhas": 87500,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-08-17",
+     "alta": false,
+     "milhas": 87500,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-08-20",
+     "alta": false,
+     "milhas": 87500,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-08-23",
+     "alta": false,
+     "milhas": 87500,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-08-26",
+     "alta": false,
+     "milhas": 87500,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-09-01",
+     "alta": false,
+     "milhas": 53300,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-09-04",
+     "alta": false,
+     "milhas": 76300,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-09-07",
+     "alta": true,
+     "milhas": 87500,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-09-10",
+     "alta": false,
+     "milhas": 87500,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-09-13",
+     "alta": false,
+     "milhas": 53300,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-09-16",
+     "alta": false,
+     "milhas": 87500,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-09-19",
+     "alta": false,
+     "milhas": 87500,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-09-22",
+     "alta": false,
+     "milhas": 87500,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-09-25",
+     "alta": false,
+     "milhas": 44400,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-09-28",
+     "alta": false,
+     "milhas": 87500,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-10-01",
+     "alta": false,
+     "milhas": 87500,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-10-04",
+     "alta": false,
+     "milhas": 87500,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-10-07",
+     "alta": false,
+     "milhas": 87500,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-10-10",
+     "alta": false,
+     "milhas": 87500,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-10-13",
+     "alta": true,
+     "milhas": 87500,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-10-16",
+     "alta": false,
+     "milhas": 40700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-10-19",
+     "alta": false,
+     "milhas": 87500,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-10-22",
+     "alta": false,
+     "milhas": 40700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-10-25",
+     "alta": false,
+     "milhas": 87500,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-10-28",
+     "alta": false,
+     "milhas": 87500,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-10-31",
+     "alta": false,
+     "milhas": 76300,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-11-03",
+     "alta": true,
+     "milhas": 87500,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-11-06",
+     "alta": false,
+     "milhas": 53300,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-11-09",
+     "alta": false,
+     "milhas": 40700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-11-12",
+     "alta": false,
+     "milhas": 87500,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-11-15",
+     "alta": true,
+     "milhas": 76300,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-11-18",
+     "alta": false,
+     "milhas": 76300,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-11-21",
+     "alta": true,
+     "milhas": 53300,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-11-24",
+     "alta": false,
+     "milhas": 76300,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-11-27",
+     "alta": false,
+     "milhas": 76300,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-11-30",
+     "alta": false,
+     "milhas": 76300,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-12-03",
+     "alta": false,
+     "milhas": 76300,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-12-06",
+     "alta": false,
+     "milhas": 76300,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-12-09",
+     "alta": false,
+     "milhas": 40700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-12-12",
+     "alta": false,
+     "milhas": 76300,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-12-16",
+     "alta": true,
+     "milhas": 76300,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-12-21",
+     "alta": true,
+     "milhas": 76300,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-12-26",
+     "alta": true,
+     "milhas": 76300,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2026-12-31",
+     "alta": true,
+     "milhas": 76300,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2027-01-05",
+     "alta": true,
+     "milhas": 87500,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2027-03-11",
+     "alta": false,
+     "milhas": 76300,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2027-03-16",
+     "alta": false,
+     "milhas": 76300,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2027-03-21",
+     "alta": true,
+     "milhas": 40700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2027-03-29",
+     "alta": true,
+     "milhas": 40700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2027-04-04",
+     "alta": false,
+     "milhas": 76300,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2027-04-10",
+     "alta": false,
+     "milhas": 76300,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2027-04-16",
+     "alta": false,
+     "milhas": 40700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2027-04-22",
+     "alta": true,
+     "milhas": 76300,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2027-04-28",
+     "alta": false,
+     "milhas": 40700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2027-05-04",
+     "alta": false,
+     "milhas": 40700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2027-05-10",
+     "alta": false,
+     "milhas": 40700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2027-05-16",
+     "alta": false,
+     "milhas": 40700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2027-05-22",
+     "alta": false,
+     "milhas": 40700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2027-05-28",
+     "alta": true,
+     "milhas": 40700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2027-06-03",
+     "alta": false,
+     "milhas": 40700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    },
+    {
+     "data": "2027-06-09",
+     "alta": false,
+     "milhas": 40700,
+     "tipo_tarifa": "SMILES_CLUB",
+     "cia": "GOL (G3)",
+     "paradas": 1,
+     "horario": "12:30",
+     "duracao_h": 3
+    }
+   ]
+  },
+  {
+   "destino": "CGB",
+   "nome": "Cuiabá",
+   "regiao": "centro_oeste",
+   "limite_alerta": 12000,
+   "milhas": null,
+   "detalhes": null,
+   "variacao": null,
+   "link": null,
+   "datas": []
+  },
+  {
+   "destino": "GRU",
+   "nome": "São Paulo (Guarulhos)",
+   "regiao": "sudeste",
+   "limite_alerta": 12000,
+   "milhas": null,
+   "detalhes": null,
+   "variacao": null,
+   "link": null,
+   "datas": []
+  },
+  {
+   "destino": "CGH",
+   "nome": "São Paulo (Congonhas)",
+   "regiao": "sudeste",
+   "limite_alerta": 12000,
+   "milhas": null,
+   "detalhes": null,
+   "variacao": null,
+   "link": null,
+   "datas": []
+  },
+  {
+   "destino": "VCP",
+   "nome": "Campinas (Viracopos)",
+   "regiao": "sudeste",
+   "limite_alerta": 12000,
+   "milhas": null,
+   "detalhes": null,
+   "variacao": null,
+   "link": null,
+   "datas": []
+  },
+  {
+   "destino": "GIG",
+   "nome": "Rio de Janeiro (Galeão)",
+   "regiao": "sudeste",
+   "limite_alerta": 12000,
+   "milhas": null,
+   "detalhes": null,
+   "variacao": null,
+   "link": null,
+   "datas": []
+  },
+  {
+   "destino": "SDU",
+   "nome": "Rio de Janeiro (Santos Dumont)",
+   "regiao": "sudeste",
+   "limite_alerta": 12000,
+   "milhas": null,
+   "detalhes": null,
+   "variacao": null,
+   "link": null,
+   "datas": []
+  },
+  {
+   "destino": "CNF",
+   "nome": "Belo Horizonte",
+   "regiao": "sudeste",
+   "limite_alerta": 12000,
+   "milhas": null,
+   "detalhes": null,
+   "variacao": null,
+   "link": null,
+   "datas": []
+  },
+  {
+   "destino": "VIX",
+   "nome": "Vitória",
+   "regiao": "sudeste",
+   "limite_alerta": 12000,
+   "milhas": null,
+   "detalhes": null,
+   "variacao": null,
+   "link": null,
+   "datas": []
+  },
+  {
+   "destino": "CWB",
+   "nome": "Curitiba",
+   "regiao": "sul",
+   "limite_alerta": 12000,
+   "milhas": null,
+   "detalhes": null,
+   "variacao": null,
+   "link": null,
+   "datas": []
+  },
+  {
+   "destino": "FLN",
+   "nome": "Florianópolis",
+   "regiao": "sul",
+   "limite_alerta": 12000,
+   "milhas": null,
+   "detalhes": null,
+   "variacao": null,
+   "link": null,
+   "datas": []
+  },
+  {
+   "destino": "POA",
+   "nome": "Porto Alegre",
+   "regiao": "sul",
+   "limite_alerta": 12000,
+   "milhas": null,
+   "detalhes": null,
+   "variacao": null,
+   "link": null,
+   "datas": []
+  },
+  {
+   "destino": "IGU",
+   "nome": "Foz do Iguaçu",
+   "regiao": "sul",
+   "limite_alerta": 12000,
+   "milhas": null,
+   "detalhes": null,
+   "variacao": null,
+   "link": null,
+   "datas": []
+  },
+  {
+   "destino": "BEL",
+   "nome": "Belém",
+   "regiao": "norte",
+   "limite_alerta": 15000,
+   "milhas": null,
+   "detalhes": null,
+   "variacao": null,
+   "link": null,
+   "datas": []
+  },
+  {
+   "destino": "MAO",
+   "nome": "Manaus",
+   "regiao": "norte",
+   "limite_alerta": 15000,
+   "milhas": null,
+   "detalhes": null,
+   "variacao": null,
+   "link": null,
+   "datas": []
   }
  ]
 }
